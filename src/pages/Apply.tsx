@@ -52,8 +52,8 @@ const Apply = () => {
                         <MessageCircle className="w-5 h-5 text-emerald" />
                       </div>
                       <div>
-                        <p className="text-xs text-muted-foreground">WhatsApp</p>
-                        <p className="font-medium text-foreground">Chat with us</p>
+                        <p className="text-xs text-muted-foreground">WhatsApp, Imo, Telegram, Zoom</p>
+                        <p className="font-medium text-foreground">Chat with us    +375296532951</p>
                       </div>
                     </a>
                     
