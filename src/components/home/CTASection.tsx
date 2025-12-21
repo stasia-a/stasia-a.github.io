@@ -38,10 +38,10 @@ const CTASection = () => {
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </Link>
-            <a href="tel:+375291234567">
+            <a href="tel:+375296532951">
               <Button variant="heroOutline" size="xl" className="gap-2 w-full sm:w-auto">
                 <Phone className="w-5 h-5" />
-                +375 29 123-45-67
+                +375 29 653-29-51
               </Button>
             </a>
           </div>
