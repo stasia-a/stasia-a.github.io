@@ -56,13 +56,13 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold text-lg mb-4 text-gold">{t('contact.title')}</h3>
               <div className="space-y-3">
-                <a href="tel:+375291234567" className="flex items-center gap-3 text-sm text-primary-foreground/80 hover:text-gold transition-colors">
+                <a href="tel:+375296532951" className="flex items-center gap-3 text-sm text-primary-foreground/80 hover:text-gold transition-colors">
                   <Phone className="w-4 h-4 text-gold" />
-                  +375 29 123-45-67
+                  +375 29 653-29-51
                 </a>
-                <a href="mailto:info@medbelarus.com" className="flex items-center gap-3 text-sm text-primary-foreground/80 hover:text-gold transition-colors">
+                <a href="mailto:charusin@mail.ru" className="flex items-center gap-3 text-sm text-primary-foreground/80 hover:text-gold transition-colors">
                   <Mail className="w-4 h-4 text-gold" />
-                  info@medbelarus.com
+                  charusin@mail.ru
                 </a>
                 <div className="flex items-start gap-3 text-sm text-primary-foreground/80">
                   <MapPin className="w-4 h-4 text-gold mt-0.5" />

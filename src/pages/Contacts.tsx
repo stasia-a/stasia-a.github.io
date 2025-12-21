@@ -6,16 +6,16 @@ const Contacts = () => {
   const { t, dir } = useLanguage();
   
   const contacts = [
-    { icon: Phone, label: t('contact.phone'), value: '+375 29 123-45-67', href: 'tel:+375291234567' },
-    { icon: Mail, label: t('contact.email'), value: 'info@medbelarus.com', href: 'mailto:info@medbelarus.com' },
+    { icon: Phone, label: t('contact.phone'), value: '+375 29 653-29-51', href: 'tel:+375296532951' },
+    { icon: Mail, label: t('contact.email'), value: 'charusin@mail.ru', href: 'mailto:charusin@mail.ru' },
     { icon: MapPin, label: t('contact.address'), value: 'Minsk, Independence Ave 95', href: '#' },
     { icon: Clock, label: t('contact.hours'), value: t('contact.hours.value'), href: '#' },
   ];
   
   const messengers = [
-    { name: 'WhatsApp', icon: '💬', href: 'https://wa.me/375291234567', color: 'bg-green-500/10 hover:bg-green-500/20' },
+    { name: 'WhatsApp', icon: '💬', href: 'https://wa.me/375296532951', color: 'bg-green-500/10 hover:bg-green-500/20' },
     { name: 'Telegram', icon: '✈️', href: 'https://t.me/medbelarus', color: 'bg-blue-500/10 hover:bg-blue-500/20' },
-    { name: 'Viber', icon: '📱', href: 'viber://chat?number=375291234567', color: 'bg-purple-500/10 hover:bg-purple-500/20' },
+    { name: 'Viber', icon: '📱', href: 'viber://chat?number=375296532951', color: 'bg-purple-500/10 hover:bg-purple-500/20' },
   ];
   
   return (
@@ -122,8 +122,8 @@ const Contacts = () => {
               <h3 className="text-xl font-bold text-foreground mb-1">24/7 Emergency Line</h3>
               <p className="text-muted-foreground">For urgent medical inquiries</p>
             </div>
-            <a href="tel:+375291234567" className="text-2xl font-bold text-primary hover:text-gold transition-colors">
-              +375 29 123-45-67
+            <a href="tel:+375296532951" className="text-2xl font-bold text-primary hover:text-gold transition-colors">
+              +375 29 653-29-51
             </a>
           </div>
         </div>
