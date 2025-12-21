@@ -2,12 +2,12 @@ import { Phone, MessageCircle, Mail } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import ApplicationForm from '@/components/forms/ApplicationForm';
 import { useLanguage } from '@/contexts/LanguageContext';
-
 const Apply = () => {
-  const { t, dir } = useLanguage();
-  
-  return (
-    <Layout>
+  const {
+    t,
+    dir
+  } = useLanguage();
+  return <Layout>
       {/* Hero */}
       <section className="py-20 lg:py-24 gradient-hero relative overflow-hidden" dir={dir}>
         <div className="absolute inset-0 arabic-pattern opacity-20" />
@@ -43,7 +43,7 @@ const Apply = () => {
                       </div>
                       <div>
                         <p className="text-xs text-muted-foreground">{t('contact.phone')}</p>
-                        <p className="font-medium text-foreground">+375 29 123-45-67</p>
+                        <p className="font-medium text-foreground">+375296532951</p>
                       </div>
                     </a>
                     
@@ -63,7 +63,7 @@ const Apply = () => {
                       </div>
                       <div>
                         <p className="text-xs text-muted-foreground">{t('contact.email')}</p>
-                        <p className="font-medium text-foreground">info@medbelarus.com</p>
+                        <p className="font-medium text-foreground">charusin@mail.ru</p>
                       </div>
                     </a>
                   </div>
@@ -87,8 +87,6 @@ const Apply = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Apply;
