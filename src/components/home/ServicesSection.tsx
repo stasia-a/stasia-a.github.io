@@ -31,9 +31,10 @@ const ServicesSection = () => {
       icon: Pill,
       title: t('services.oncology'),
       description: t('services.oncology.desc'),
+      details: t('services.oncology.details'),
       color: 'text-purple-500',
       bgColor: 'bg-purple-500/10',
-      hasDetails: false,
+      hasDetails: true,
     },
     {
       id: 'orthopedics',
@@ -146,13 +147,13 @@ const ServicesSection = () => {
         </div>
       </div>
 
-      {/* Cardiology Details Dialog */}
-      <Dialog open={openDialog === 'cardiology'} onOpenChange={(open) => !open && setOpenDialog(null)}>
+      {/* Service Details Dialog */}
+      <Dialog open={openDialog !== null} onOpenChange={(open) => !open && setOpenDialog(null)}>
         <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto" dir={dir}>
           <DialogHeader>
             <DialogTitle className="flex items-center gap-3 text-2xl">
-              <div className="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center">
-                <Heart className="w-6 h-6 text-red-500" />
+              <div className={`w-12 h-12 rounded-xl ${currentService?.bgColor} flex items-center justify-center`}>
+                {currentService && <currentService.icon className={`w-6 h-6 ${currentService.color}`} />}
               </div>
               {currentService?.title}
             </DialogTitle>
