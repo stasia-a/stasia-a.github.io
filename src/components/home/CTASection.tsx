@@ -1,12 +1,12 @@
 import { Phone, MessageCircle, Mail } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ApplicationForm from '@/components/forms/ApplicationForm';
-
 const CTASection = () => {
-  const { t, dir } = useLanguage();
-  
-  return (
-    <section className="py-20 lg:py-32 relative overflow-hidden" dir={dir}>
+  const {
+    t,
+    dir
+  } = useLanguage();
+  return <section className="py-20 lg:py-32 relative overflow-hidden" dir={dir}>
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-gold/5" />
       <div className="absolute inset-0 arabic-pattern opacity-10" />
@@ -43,10 +43,7 @@ const CTASection = () => {
                 </h3>
                 
                 <div className="space-y-4">
-                  <a 
-                    href="tel:+375296532951" 
-                    className="flex items-center gap-3 p-3 rounded-lg bg-primary/5 hover:bg-primary/10 transition-colors"
-                  >
+                  <a href="tel:+375296532951" className="flex items-center gap-3 p-3 rounded-lg bg-primary/5 hover:bg-primary/10 transition-colors">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
@@ -56,25 +53,17 @@ const CTASection = () => {
                     </div>
                   </a>
                   
-                  <a 
-                    href="https://wa.me/375296532951" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-3 rounded-lg bg-emerald/5 hover:bg-emerald/10 transition-colors"
-                  >
+                  <a href="https://wa.me/375296532951" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-emerald/5 hover:bg-emerald/10 transition-colors">
                     <div className="w-10 h-10 rounded-full bg-emerald/10 flex items-center justify-center">
                       <MessageCircle className="w-5 h-5 text-emerald" />
                     </div>
                     <div>
-                      <div className="text-sm text-muted-foreground">WhatsApp</div>
+                      <div className="text-sm text-muted-foreground">WhatsApp, Telegram, Imo, Zoom</div>
                       <div className="font-medium text-foreground">+375 29 653-29-51</div>
                     </div>
                   </a>
                   
-                  <a 
-                    href="mailto:charusin@mail.ru"
-                    className="flex items-center gap-3 p-3 rounded-lg bg-gold/5 hover:bg-gold/10 transition-colors"
-                  >
+                  <a href="mailto:charusin@mail.ru" className="flex items-center gap-3 p-3 rounded-lg bg-gold/5 hover:bg-gold/10 transition-colors">
                     <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center">
                       <Mail className="w-5 h-5 text-gold" />
                     </div>
@@ -101,8 +90,6 @@ const CTASection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTASection;
