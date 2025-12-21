@@ -16,28 +16,30 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <LanguageProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/tourism" element={<Tourism />} />
-            <Route path="/institutions" element={<Institutions />} />
-            <Route path="/doctors" element={<Doctors />} />
-            <Route path="/prices" element={<Prices />} />
-            <Route path="/contacts" element={<Contacts />} />
-            <Route path="/apply" element={<Apply />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
-    </LanguageProvider>
-  </QueryClientProvider>
-);
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <LanguageProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/tourism" element={<Tourism />} />
+              <Route path="/institutions" element={<Institutions />} />
+              <Route path="/doctors" element={<Doctors />} />
+              <Route path="/prices" element={<Prices />} />
+              <Route path="/contacts" element={<Contacts />} />
+              <Route path="/apply" element={<Apply />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </TooltipProvider>
+      </LanguageProvider>
+    </QueryClientProvider>
+  );
+}
 
 export default App;
