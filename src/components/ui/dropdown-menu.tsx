@@ -38,8 +38,9 @@ const DropdownMenuItem = React.forwardRef<React.ElementRef<typeof DropdownMenuPr
 }>(({
   className,
   inset,
+  children,
   ...props
-}, ref) => <DropdownMenuPrimitive.Item ref={ref} className="" />);
+}, ref) => <DropdownMenuPrimitive.Item ref={ref} className={cn("relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors data-[disabled]:pointer-events-none data-[disabled]:opacity-50 focus:bg-accent focus:text-accent-foreground", inset && "pl-8", className)} {...props}>{children}</DropdownMenuPrimitive.Item>);
 DropdownMenuItem.displayName = DropdownMenuPrimitive.Item.displayName;
 const DropdownMenuCheckboxItem = React.forwardRef<React.ElementRef<typeof DropdownMenuPrimitive.CheckboxItem>, React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.CheckboxItem>>(({
   className,
