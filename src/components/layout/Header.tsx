@@ -26,9 +26,9 @@ const Header = () => {
   ];
   
   const languages = [
+    { code: 'en', name: 'English', flag: '🇬🇧' },
     { code: 'ar', name: 'العربية', flag: '🇸🇦' },
     { code: 'ru', name: 'Русский', flag: '🇷🇺' },
-    { code: 'en', name: 'English', flag: '🇬🇧' },
   ];
   
   return (
@@ -90,9 +90,9 @@ const Header = () => {
             </DropdownMenu>
             
             {/* Phone */}
-            <a href="tel:+375291234567" className="hidden md:flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground">
+            <a href="tel:+375296532951" className="hidden md:flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground">
               <Phone className="w-4 h-4" />
-              <span>+375 29 123-45-67</span>
+              <span>+375 29 653-29-51</span>
             </a>
             
             {/* CTA Button */}
