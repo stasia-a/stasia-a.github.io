@@ -166,14 +166,141 @@ const translations: Record<Language, Record<string, string>> = {
     'form.submit': 'إرسال الطلب',
     'form.success': 'تم إرسال طلبك بنجاح!',
     
-    // About
-    'about.title': 'من نحن',
-    'about.subtitle': 'شريكك الموثوق في السياحة العلاجية',
-    'about.mission': 'مهمتنا',
-    'about.mission.text': 'توفير الوصول إلى أفضل الرعاية الصحية في بيلاروسيا للمرضى من الدول العربية',
-    'about.experience': 'سنوات من الخبرة',
-    'about.team': 'فريق متخصص',
-    'about.team.text': 'فريقنا يضم أطباء ومترجمين ومنسقين محترفين',
+    // About - Hero
+    'about.hero.title': 'التنظيم المهني للعلاج في المراكز الطبية الرائدة في بيلاروسيا',
+    'about.hero.subtitle': 'المرافقة الدولية، السرية، النهج الطبي الفردي',
+    
+    // About - Mission
+    'about.mission.badge': 'المهمة والقيم',
+    'about.mission.title': 'مهمتنا',
+    'about.mission.text1': 'توفير وصول المرضى من دول الشرق الأوسط ودول أخرى في العالم إلى أفضل الخدمات الطبية في جمهورية بيلاروسيا.',
+    'about.mission.text2': 'مهمتنا هي الجمع بين الطب والثقافة والضيافة، وتحويل بيلاروسيا إلى أحد المراكز الرئيسية للسياحة العلاجية في أوروبا الشرقية.',
+    
+    // About - Values
+    'about.values.title': 'قيمنا الأساسية',
+    'about.values.patient.title': 'رعاية المريض',
+    'about.values.patient.desc': 'نهج فردي واحترام واهتمام بكل مريض',
+    'about.values.transparency.title': 'شفافية الأسعار',
+    'about.values.transparency.desc': 'هيكل تكلفة واضح بدون رسوم خفية',
+    'about.values.confidentiality.title': 'السرية',
+    'about.values.confidentiality.desc': 'حماية صارمة للبيانات الشخصية والطبية',
+    'about.values.standards.title': 'المعايير الدولية',
+    'about.values.standards.desc': 'العلاج وفق البروتوكولات السريرية العالمية المعترف بها',
+    
+    // About - Strategy
+    'about.strategy.title': 'الرؤية الاستراتيجية',
+    'about.strategy.subtitle': 'شركة "ستانوبرينت" تركز على ثلاث مهام استراتيجية',
+    'about.strategy.turnkey.title': 'خدمة شاملة "تسليم مفتاح"',
+    'about.strategy.turnkey.desc': 'التنسيق الكامل لمسار المريض، بما في ذلك التشخيص والعلاج وإعادة التأهيل والإقامة والترجمة الطبية والخدمات اللوجستية.',
+    'about.strategy.cooperation.title': 'التعاون الدولي',
+    'about.strategy.cooperation.desc': 'تطوير علاقات مؤسسية وحكومية طويلة الأمد مع الدول العربية ومناطق أخرى في مجالات الصحة والتعليم والأدوية.',
+    'about.strategy.reputation.title': 'بناء السمعة الدولية للطب البيلاروسي',
+    'about.strategy.reputation.desc': 'تعزيز الوعي والثقة في طب جمهورية بيلاروسيا من خلال تقديم خدمات طبية عالية الجودة للمرضى الأجانب بأسعار تنافسية.',
+    
+    // About - Company
+    'about.company.title': 'من نحن',
+    'about.company.legal': 'الكيان القانوني',
+    'about.company.name': 'شركة ذات مسؤولية محدودة "ستانوبرينت"',
+    'about.company.address.label': 'العنوان القانوني',
+    'about.company.address.value': '220124، جمهورية بيلاروسيا، مينسك، شارع م. لينكوفا، مبنى 101/3، مكتب 44',
+    'about.company.phone.label': 'الهاتف / الفاكس',
+    
+    // About - Role
+    'about.role.title': 'دورنا',
+    'about.role.text1': 'تعمل شركة "ستانوبرينت" كمنسق للسياحة العلاجية للمرضى الأجانب الذين يخططون للعلاج في جمهورية بيلاروسيا.',
+    'about.role.text2': 'تقدم الشركة خدمات تنظيمية ومعلوماتية وتنسيقية حصرياً، مما يضمن التفاعل الفعال للمرضى مع المؤسسات الطبية المعتمدة.',
+    
+    // About - Why Belarus
+    'about.whybelarus.title': 'لماذا بيلاروسيا',
+    'about.whybelarus.subtitle': 'بيلاروسيا من بين الدول الرائدة في أوروبا الشرقية التي تتمتع بمزايا تنافسية كبيرة في مجال الرعاية الصحية',
+    'about.whybelarus.specialists': 'مستوى عالٍ من المتخصصين الطبيين',
+    'about.whybelarus.equipment': 'معدات تشخيصية وعلاجية حديثة',
+    'about.whybelarus.system': 'نظام رعاية صحية حكومي شامل',
+    'about.whybelarus.prices': 'أسعار شفافة ومعقولة',
+    'about.whybelarus.directions': 'أكثر التخصصات الطبية طلباً:',
+    'about.whybelarus.dir.oncology': 'الأورام والأشعة',
+    'about.whybelarus.dir.cardiology': 'أمراض القلب وجراحة العظام',
+    'about.whybelarus.dir.ophthalmology': 'طب العيون',
+    'about.whybelarus.dir.endocrinology': 'الغدد الصماء وعلاج السمنة',
+    'about.whybelarus.dir.diagnostics': 'التشخيص الشامل وإعادة التأهيل',
+    'about.whybelarus.stats': 'في عام 2024، تلقى أكثر من 160,000 مواطن أجنبي من 159 دولة الرعاية الطبية في بيلاروسيا، بما في ذلك أكثر من 1,000 مريض من ليبيا.',
+    
+    // About - Advantages
+    'about.advantages.title': 'المزايا الرئيسية للطب البيلاروسي',
+    'about.advantages.quality.title': 'الجودة',
+    'about.advantages.reputation.title': 'السمعة',
+    'about.advantages.comfort.title': 'الأمان والراحة',
+    'about.quality.protocols': 'البروتوكولات السريرية الدولية (NCCN، ESMO، ESC)',
+    'about.quality.equipment': 'معدات عالية التقنية: PET-CT، MRI 3 Tesla، VMAT، أنظمة Da Vinci الروبوتية، التنقل ثلاثي الأبعاد',
+    'about.quality.doctors': 'أكثر من 45,000 طبيب في جميع أنحاء البلاد',
+    'about.quality.training': 'متخصصون تدربوا في ألمانيا وإسرائيل وكوريا الجنوبية وبولندا',
+    'about.reputation.oncology': 'واحدة من أقوى مدارس الأورام في المنطقة',
+    'about.reputation.diagnostics': 'دقة تشخيصية عالية',
+    'about.reputation.complications': 'معدل مضاعفات منخفض',
+    'about.reputation.ethics': 'معايير صارمة للأخلاقيات الطبية',
+    'about.comfort.safety': 'دولة أوروبية آمنة',
+    'about.comfort.cities': 'مدن نظيفة وبنية تحتية واضحة',
+    'about.comfort.languages': 'طاقم يتحدث الإنجليزية والروسية وجزئياً العربية',
+    'about.advantages.duration': 'متوسط مدة إقامة المريض: 7-14 يوماً',
+    
+    // About - Medical Centers
+    'about.centers.title': 'المراكز الطبية الرائدة',
+    'about.centers.table.name': 'المركز الطبي',
+    'about.centers.table.profile': 'التخصص',
+    'about.centers.cardiology.name': 'مركز RNPC لأمراض القلب',
+    'about.centers.cardiology.profile': 'جراحة القلب، التشخيص، جراحة الأوعية الدموية',
+    'about.centers.oncology.name': 'مركز RNPC للأورام',
+    'about.centers.oncology.profile': 'العلاج الكيميائي، العلاج الإشعاعي، العلاج الجراحي',
+    'about.centers.neurosurgery.name': 'مركز RNPC لجراحة الأعصاب',
+    'about.centers.neurosurgery.profile': 'جراحة الدماغ والعمود الفقري',
+    'about.centers.lode.name': 'مركز LODE الطبي',
+    'about.centers.lode.profile': 'برامج الفحص الشامل، التشخيص',
+    'about.centers.newmed.name': 'عيادة الطب الجديد',
+    'about.centers.newmed.profile': 'الجراحة التجميلية والترميمية',
+    'about.centers.ophthalmology.name': 'عيادة طب العيون البيلاروسية',
+    'about.centers.ophthalmology.profile': 'تصحيح الرؤية بالليزر، علاج إعتام عدسة العين',
+    'about.centers.yunost.name': 'مصحة يونوست',
+    'about.centers.yunost.profile': 'برامج إعادة التأهيل المتميزة',
+    
+    // About - Tourism
+    'about.tourism.title': 'السياحة العلاجية والبرامج الثقافية',
+    'about.tourism.subtitle': 'للمرضى الذين يخضعون لعلاج غير مكثف والمرافقين تتوفر برامج إضافية',
+    'about.tourism.historical': 'مينسك التاريخية، قلعة مير، نسفيج',
+    'about.tourism.parks': 'المحميات الطبيعية والجولات الإثنية',
+    'about.tourism.spa': 'مجمعات السبا والعافية، الينابيع المعدنية',
+    'about.tourism.gastro': 'جولات التسوق والطهي الموسمية',
+    'about.tourism.note': 'هذه البرامج تزيد من جاذبية الباقات للعملاء العائليين وكبار الشخصيات.',
+    
+    // About - Our Services
+    'about.ourservices.title': 'نطاق الخدمات',
+    'about.ourservices.subtitle': 'تقدم شركة "ستانوبرينت" خدمات تنظيمية ومعلوماتية وتنسيقية حصرياً',
+    'about.services.clinic': 'اختيار العيادة وبرامج التشخيص والعلاج الأولية بناءً على المستندات الطبية المقدمة من المريض',
+    'about.services.cost': 'الحصول على تقديرات تكلفة التشخيص والعلاج من العيادات',
+    'about.services.arrival': 'تنظيم الوصول إلى بيلاروسيا (الاستقبال في المطار، التحويلات - بالاتفاق)',
+    'about.services.accommodation': 'تنظيم الإقامة (الفنادق، الشقق، المصحات)',
+    'about.services.leisure': 'تنظيم الترفيه والبرامج السياحية والثقافية',
+    'about.services.transfers': 'تنظيم التحويلات داخل بيلاروسيا (باتفاق منفصل)',
+    'about.services.communication': 'الدعم المعلوماتي والمساعدة في التواصل مع العيادات (الترجمة، تنسيق المواعيد والإجراءات)',
+    
+    // About - Disclaimer
+    'about.disclaimer.title': 'إخلاء المسؤولية القانونية',
+    'about.disclaimer.text1': 'جميع الخدمات الطبية (التشخيص، العلاج، التدخلات الجراحية، إعادة التأهيل) تقدم مباشرة من قبل المؤسسات الطبية بناءً على عقود منفصلة بين المريض والعيادة المعنية.',
+    'about.disclaimer.text2': 'شركة "ستانوبرينت":',
+    'about.disclaimer.important': 'مهم:',
+    'about.disclaimer.point1': 'ليست منظمة طبية',
+    'about.disclaimer.point2': 'لا تقدم خدمات طبية',
+    'about.disclaimer.point3': 'لا تتدخل في عملية التشخيص والعلاج',
+    'about.disclaimer.point4': 'ليست مسؤولة عن القرارات الطبية للأطباء، نتائج العلاج، المضاعفات المحتملة، الآثار الجانبية والتغييرات في تكلفة العلاج بسبب الضرورة الطبية',
+    'about.disclaimer.permits': 'تصاريح السياحة على أراضي جمهورية بيلاروسيا صادرة وفقاً للإجراءات المعمول بها.',
+    
+    // About - Offices
+    'about.offices.title': 'المكاتب والممثليات',
+    'about.offices.headquarters': 'المكتب الرئيسي',
+    'about.offices.representation': 'الممثلية',
+    'about.offices.belarus.title': 'بيلاروسيا',
+    'about.offices.oman.title': 'عُمان',
+    'about.offices.oman.reg': 'رقم التسجيل',
+    'about.offices.oman.address': 'الخوير / بوشر / محافظة مسقط',
     
     // Footer
     'footer.rights': 'جميع الحقوق محفوظة',
@@ -361,14 +488,141 @@ const translations: Record<Language, Record<string, string>> = {
     'form.submit': 'Отправить заявку',
     'form.success': 'Заявка успешно отправлена!',
     
-    // About
-    'about.title': 'О нас',
-    'about.subtitle': 'Ваш надёжный партнёр в медицинском туризме',
-    'about.mission': 'Наша миссия',
-    'about.mission.text': 'Обеспечить доступ к лучшему здравоохранению Беларуси для пациентов из арабских стран',
-    'about.experience': 'лет опыта',
-    'about.team': 'Профессиональная команда',
-    'about.team.text': 'В нашей команде врачи, переводчики и координаторы',
+    // About - Hero
+    'about.hero.title': 'Профессиональная организация лечения в ведущих медицинских центрах Беларуси',
+    'about.hero.subtitle': 'Международное сопровождение, конфиденциальность, индивидуальный медицинский подход',
+    
+    // About - Mission
+    'about.mission.badge': 'Миссия и ценности',
+    'about.mission.title': 'Наша миссия',
+    'about.mission.text1': 'Обеспечить пациентам из стран Ближнего Востока и других стран мира доступ к лучшим медицинским услугам в Республике Беларусь.',
+    'about.mission.text2': 'Наша миссия — объединить медицину, культуру и гостеприимство, превратив Беларусь в один из ключевых центров медицинского туризма Восточной Европы.',
+    
+    // About - Values
+    'about.values.title': 'Наши ключевые ценности',
+    'about.values.patient.title': 'Забота о пациенте',
+    'about.values.patient.desc': 'Индивидуальный подход, уважение и внимание к каждому пациенту',
+    'about.values.transparency.title': 'Прозрачность цен',
+    'about.values.transparency.desc': 'Понятная структура стоимости без скрытых платежей',
+    'about.values.confidentiality.title': 'Конфиденциальность',
+    'about.values.confidentiality.desc': 'Строгая защита персональных и медицинских данных',
+    'about.values.standards.title': 'Международные стандарты',
+    'about.values.standards.desc': 'Лечение на основе признанных мировых клинических протоколов',
+    
+    // About - Strategy
+    'about.strategy.title': 'Стратегическое видение',
+    'about.strategy.subtitle': 'Компания «Станопринт» ориентируется на три стратегические задачи',
+    'about.strategy.turnkey.title': 'Комплексный сервис «под ключ»',
+    'about.strategy.turnkey.desc': 'Полная координация пути пациента, включая диагностику, лечение, реабилитацию, размещение, медицинский перевод и логистику.',
+    'about.strategy.cooperation.title': 'Международное сотрудничество',
+    'about.strategy.cooperation.desc': 'Развитие долгосрочных межгосударственных и институциональных связей с арабскими странами и другими регионами в сферах здравоохранения, образования и фармацевтики.',
+    'about.strategy.reputation.title': 'Формирование международной репутации белорусской медицины',
+    'about.strategy.reputation.desc': 'Повышение узнаваемости и доверия к медицине Республики Беларусь за счёт предоставления высококачественных медицинских услуг иностранным пациентам по конкурентоспособным ценам.',
+    
+    // About - Company
+    'about.company.title': 'Кто мы',
+    'about.company.legal': 'Юридическое лицо',
+    'about.company.name': 'Общество с ограниченной ответственностью «Станопринт»',
+    'about.company.address.label': 'Юридический адрес',
+    'about.company.address.value': '220124, Республика Беларусь, г. Минск, ул. М. Лынькова, д. 101/3, офис 44',
+    'about.company.phone.label': 'Телефон / факс',
+    
+    // About - Role
+    'about.role.title': 'Наша роль',
+    'about.role.text1': 'Компания «Станопринт» выступает в роли координатора медицинского туризма для иностранных пациентов, планирующих лечение в Республике Беларусь.',
+    'about.role.text2': 'Компания оказывает исключительно организационные, информационные и координационные услуги, обеспечивая эффективное взаимодействие пациентов с аккредитованными медицинскими учреждениями.',
+    
+    // About - Why Belarus
+    'about.whybelarus.title': 'Почему Беларусь',
+    'about.whybelarus.subtitle': 'Беларусь входит в число ведущих государств Восточной Европы, обладающих значительными конкурентными преимуществами в сфере здравоохранения',
+    'about.whybelarus.specialists': 'Высокий уровень медицинских специалистов',
+    'about.whybelarus.equipment': 'Современное диагностическое и лечебное оборудование',
+    'about.whybelarus.system': 'Комплексная государственная система здравоохранения',
+    'about.whybelarus.prices': 'Доступные и прозрачные цены',
+    'about.whybelarus.directions': 'Наиболее востребованные медицинские направления:',
+    'about.whybelarus.dir.oncology': 'Онкология и радиология',
+    'about.whybelarus.dir.cardiology': 'Кардиология и ортопедия',
+    'about.whybelarus.dir.ophthalmology': 'Офтальмология',
+    'about.whybelarus.dir.endocrinology': 'Эндокринология и лечение ожирения',
+    'about.whybelarus.dir.diagnostics': 'Комплексная диагностика и реабилитация',
+    'about.whybelarus.stats': 'В 2024 году медицинскую помощь в Беларуси получили более 160 000 иностранных граждан из 159 стран, включая более 1 000 пациентов из Ливии.',
+    
+    // About - Advantages
+    'about.advantages.title': 'Ключевые преимущества белорусской медицины',
+    'about.advantages.quality.title': 'Качество',
+    'about.advantages.reputation.title': 'Репутация',
+    'about.advantages.comfort.title': 'Безопасность и комфорт',
+    'about.quality.protocols': 'Международные клинические протоколы (NCCN, ESMO, ESC)',
+    'about.quality.equipment': 'Высокотехнологичное оборудование: ПЭТ-КТ, МРТ 3 Тесла, VMAT, роботизированные системы Da Vinci, 3D-навигация',
+    'about.quality.doctors': 'Более 45 000 врачей по всей стране',
+    'about.quality.training': 'Специалисты, прошедшие стажировки в Германии, Израиле, Южной Корее, Польше',
+    'about.reputation.oncology': 'Одна из сильнейших онкологических школ в регионе',
+    'about.reputation.diagnostics': 'Высокая точность диагностики',
+    'about.reputation.complications': 'Низкий уровень осложнений',
+    'about.reputation.ethics': 'Строгие стандарты медицинской этики',
+    'about.comfort.safety': 'Безопасная европейская страна',
+    'about.comfort.cities': 'Чистые города и понятная инфраструктура',
+    'about.comfort.languages': 'Персонал, владеющий английским, русским и частично арабским языками',
+    'about.advantages.duration': 'Средняя продолжительность пребывания пациента: 7–14 дней',
+    
+    // About - Medical Centers
+    'about.centers.title': 'Ведущие медицинские центры',
+    'about.centers.table.name': 'Медицинский центр',
+    'about.centers.table.profile': 'Профиль',
+    'about.centers.cardiology.name': 'РНПЦ «Кардиология»',
+    'about.centers.cardiology.profile': 'Кардиохирургия, диагностика, сосудистая хирургия',
+    'about.centers.oncology.name': 'РНПЦ «Онкология»',
+    'about.centers.oncology.profile': 'Химиотерапия, лучевая терапия, хирургическое лечение',
+    'about.centers.neurosurgery.name': 'РНПЦ «Нейрохирургия»',
+    'about.centers.neurosurgery.profile': 'Хирургия головного мозга и позвоночника',
+    'about.centers.lode.name': 'Медицинский центр «ЛОДЭ»',
+    'about.centers.lode.profile': 'Комплексные check-up программы, диагностика',
+    'about.centers.newmed.name': 'Клиника «Новая Медицина»',
+    'about.centers.newmed.profile': 'Пластическая и реконструктивная хирургия',
+    'about.centers.ophthalmology.name': 'Белорусская офтальмологическая клиника',
+    'about.centers.ophthalmology.profile': 'Лазерная коррекция зрения, лечение катаракты',
+    'about.centers.yunost.name': 'Санаторий «Юность»',
+    'about.centers.yunost.profile': 'Премиальные программы реабилитации',
+    
+    // About - Tourism
+    'about.tourism.title': 'Медицинский туризм и культурные программы',
+    'about.tourism.subtitle': 'Для пациентов с неинтенсивным лечением и сопровождающих лиц доступны дополнительные программы',
+    'about.tourism.historical': 'Исторический Минск, Мирский замок, Несвиж',
+    'about.tourism.parks': 'Национальные парки и этно-туры',
+    'about.tourism.spa': 'SPA- и wellness-комплексы, минеральные источники',
+    'about.tourism.gastro': 'Шопинг-туры и сезонные гастрономические маршруты',
+    'about.tourism.note': 'Данные программы повышают привлекательность пакетов для семейных и VIP-клиентов.',
+    
+    // About - Our Services
+    'about.ourservices.title': 'Объём услуг',
+    'about.ourservices.subtitle': 'Компания «Станопринт» оказывает исключительно организационные, информационные и координационные услуги',
+    'about.services.clinic': 'Подбор клиники и предварительных лечебно-диагностических программ на основании медицинских документов, предоставленных пациентом',
+    'about.services.cost': 'Получение ориентировочных расчётов стоимости диагностики и лечения от клиник',
+    'about.services.arrival': 'Организация прибытия в Беларусь (встреча в аэропорту, трансферы — по согласованию)',
+    'about.services.accommodation': 'Организация проживания (гостиницы, апартаменты, санатории)',
+    'about.services.leisure': 'Организация досуга, экскурсионных и культурных программ',
+    'about.services.transfers': 'Организация трансферов по территории Беларуси (по отдельному соглашению)',
+    'about.services.communication': 'Информационное сопровождение и помощь в коммуникации с клиниками (перевод, согласование дат и процедур)',
+    
+    // About - Disclaimer
+    'about.disclaimer.title': 'Юридический дисклеймер',
+    'about.disclaimer.text1': 'Все медицинские услуги (диагностика, лечение, хирургические вмешательства, реабилитация) оказываются непосредственно медицинскими учреждениями на основании отдельных договоров между пациентом и соответствующей клиникой.',
+    'about.disclaimer.text2': 'Компания «Станопринт»:',
+    'about.disclaimer.important': 'Важно:',
+    'about.disclaimer.point1': 'Не является медицинской организацией',
+    'about.disclaimer.point2': 'Не оказывает медицинских услуг',
+    'about.disclaimer.point3': 'Не вмешивается в процесс диагностики и лечения',
+    'about.disclaimer.point4': 'Не несёт ответственности за медицинские решения врачей, результаты лечения, возможные осложнения, побочные эффекты и изменения стоимости лечения, обусловленные медицинской необходимостью',
+    'about.disclaimer.permits': 'Туристические разрешения на территории Республики Беларусь оформлены в установленном порядке.',
+    
+    // About - Offices
+    'about.offices.title': 'Офисы и представительства',
+    'about.offices.headquarters': 'Головной офис',
+    'about.offices.representation': 'Представительство',
+    'about.offices.belarus.title': 'Беларусь',
+    'about.offices.oman.title': 'Оман',
+    'about.offices.oman.reg': 'Регистрационный номер',
+    'about.offices.oman.address': 'Al Khuwair / Bousher / Governorate of Muscat',
     
     // Footer
     'footer.rights': 'Все права защищены',
@@ -556,14 +810,141 @@ const translations: Record<Language, Record<string, string>> = {
     'form.submit': 'Submit Request',
     'form.success': 'Your request has been submitted successfully!',
     
-    // About
-    'about.title': 'About Us',
-    'about.subtitle': 'Your Trusted Partner in Medical Tourism',
-    'about.mission': 'Our Mission',
-    'about.mission.text': 'To provide access to the best healthcare in Belarus for patients from Arab countries',
-    'about.experience': 'years of experience',
-    'about.team': 'Professional Team',
-    'about.team.text': 'Our team includes doctors, translators, and coordinators',
+    // About - Hero
+    'about.hero.title': 'Professional Medical Treatment Organization at Leading Belarusian Medical Centers',
+    'about.hero.subtitle': 'International Support, Confidentiality, Individual Medical Approach',
+    
+    // About - Mission
+    'about.mission.badge': 'Mission and Values',
+    'about.mission.title': 'Our Mission',
+    'about.mission.text1': 'To provide patients from the Middle East and other countries around the world with access to the best medical services in the Republic of Belarus.',
+    'about.mission.text2': 'Our mission is to combine medicine, culture, and hospitality, transforming Belarus into one of the key centers of medical tourism in Eastern Europe.',
+    
+    // About - Values
+    'about.values.title': 'Our Key Values',
+    'about.values.patient.title': 'Patient Care',
+    'about.values.patient.desc': 'Individual approach, respect and attention to each patient',
+    'about.values.transparency.title': 'Price Transparency',
+    'about.values.transparency.desc': 'Clear cost structure without hidden fees',
+    'about.values.confidentiality.title': 'Confidentiality',
+    'about.values.confidentiality.desc': 'Strict protection of personal and medical data',
+    'about.values.standards.title': 'International Standards',
+    'about.values.standards.desc': 'Treatment based on recognized global clinical protocols',
+    
+    // About - Strategy
+    'about.strategy.title': 'Strategic Vision',
+    'about.strategy.subtitle': 'Stanoprint Company focuses on three strategic objectives',
+    'about.strategy.turnkey.title': 'Comprehensive Turnkey Service',
+    'about.strategy.turnkey.desc': 'Full coordination of the patient journey, including diagnostics, treatment, rehabilitation, accommodation, medical translation, and logistics.',
+    'about.strategy.cooperation.title': 'International Cooperation',
+    'about.strategy.cooperation.desc': 'Development of long-term interstate and institutional relations with Arab countries and other regions in healthcare, education, and pharmaceuticals.',
+    'about.strategy.reputation.title': 'Building International Reputation of Belarusian Medicine',
+    'about.strategy.reputation.desc': 'Increasing recognition and trust in the medicine of the Republic of Belarus by providing high-quality medical services to foreign patients at competitive prices.',
+    
+    // About - Company
+    'about.company.title': 'Who We Are',
+    'about.company.legal': 'Legal Entity',
+    'about.company.name': 'Limited Liability Company "Stanoprint"',
+    'about.company.address.label': 'Legal Address',
+    'about.company.address.value': '220124, Republic of Belarus, Minsk, M. Lynkova str., 101/3, office 44',
+    'about.company.phone.label': 'Phone / Fax',
+    
+    // About - Role
+    'about.role.title': 'Our Role',
+    'about.role.text1': 'Stanoprint Company acts as a medical tourism coordinator for foreign patients planning treatment in the Republic of Belarus.',
+    'about.role.text2': 'The company provides exclusively organizational, informational, and coordination services, ensuring effective interaction of patients with accredited medical institutions.',
+    
+    // About - Why Belarus
+    'about.whybelarus.title': 'Why Belarus',
+    'about.whybelarus.subtitle': 'Belarus is among the leading states in Eastern Europe with significant competitive advantages in healthcare',
+    'about.whybelarus.specialists': 'High level of medical specialists',
+    'about.whybelarus.equipment': 'Modern diagnostic and treatment equipment',
+    'about.whybelarus.system': 'Comprehensive state healthcare system',
+    'about.whybelarus.prices': 'Affordable and transparent prices',
+    'about.whybelarus.directions': 'Most sought-after medical directions:',
+    'about.whybelarus.dir.oncology': 'Oncology and radiology',
+    'about.whybelarus.dir.cardiology': 'Cardiology and orthopedics',
+    'about.whybelarus.dir.ophthalmology': 'Ophthalmology',
+    'about.whybelarus.dir.endocrinology': 'Endocrinology and obesity treatment',
+    'about.whybelarus.dir.diagnostics': 'Comprehensive diagnostics and rehabilitation',
+    'about.whybelarus.stats': 'In 2024, more than 160,000 foreign citizens from 159 countries received medical care in Belarus, including more than 1,000 patients from Libya.',
+    
+    // About - Advantages
+    'about.advantages.title': 'Key Advantages of Belarusian Medicine',
+    'about.advantages.quality.title': 'Quality',
+    'about.advantages.reputation.title': 'Reputation',
+    'about.advantages.comfort.title': 'Safety and Comfort',
+    'about.quality.protocols': 'International clinical protocols (NCCN, ESMO, ESC)',
+    'about.quality.equipment': 'High-tech equipment: PET-CT, MRI 3 Tesla, VMAT, Da Vinci robotic systems, 3D navigation',
+    'about.quality.doctors': 'More than 45,000 doctors across the country',
+    'about.quality.training': 'Specialists trained in Germany, Israel, South Korea, Poland',
+    'about.reputation.oncology': 'One of the strongest oncology schools in the region',
+    'about.reputation.diagnostics': 'High diagnostic accuracy',
+    'about.reputation.complications': 'Low complication rate',
+    'about.reputation.ethics': 'Strict medical ethics standards',
+    'about.comfort.safety': 'Safe European country',
+    'about.comfort.cities': 'Clean cities and clear infrastructure',
+    'about.comfort.languages': 'Staff speaking English, Russian, and partially Arabic',
+    'about.advantages.duration': 'Average patient stay duration: 7-14 days',
+    
+    // About - Medical Centers
+    'about.centers.title': 'Leading Medical Centers',
+    'about.centers.table.name': 'Medical Center',
+    'about.centers.table.profile': 'Profile',
+    'about.centers.cardiology.name': 'RSPC "Cardiology"',
+    'about.centers.cardiology.profile': 'Cardiac surgery, diagnostics, vascular surgery',
+    'about.centers.oncology.name': 'RSPC "Oncology"',
+    'about.centers.oncology.profile': 'Chemotherapy, radiation therapy, surgical treatment',
+    'about.centers.neurosurgery.name': 'RSPC "Neurosurgery"',
+    'about.centers.neurosurgery.profile': 'Brain and spine surgery',
+    'about.centers.lode.name': 'Medical Center "LODE"',
+    'about.centers.lode.profile': 'Comprehensive check-up programs, diagnostics',
+    'about.centers.newmed.name': 'Clinic "New Medicine"',
+    'about.centers.newmed.profile': 'Plastic and reconstructive surgery',
+    'about.centers.ophthalmology.name': 'Belarusian Ophthalmology Clinic',
+    'about.centers.ophthalmology.profile': 'Laser vision correction, cataract treatment',
+    'about.centers.yunost.name': 'Sanatorium "Yunost"',
+    'about.centers.yunost.profile': 'Premium rehabilitation programs',
+    
+    // About - Tourism
+    'about.tourism.title': 'Medical Tourism and Cultural Programs',
+    'about.tourism.subtitle': 'Additional programs are available for patients with non-intensive treatment and accompanying persons',
+    'about.tourism.historical': 'Historic Minsk, Mir Castle, Nesvizh',
+    'about.tourism.parks': 'National parks and ethno-tours',
+    'about.tourism.spa': 'SPA and wellness complexes, mineral springs',
+    'about.tourism.gastro': 'Shopping tours and seasonal gastronomic routes',
+    'about.tourism.note': 'These programs increase the attractiveness of packages for family and VIP clients.',
+    
+    // About - Our Services
+    'about.ourservices.title': 'Scope of Services',
+    'about.ourservices.subtitle': 'Stanoprint Company provides exclusively organizational, informational, and coordination services',
+    'about.services.clinic': 'Selection of clinic and preliminary treatment and diagnostic programs based on medical documents provided by the patient',
+    'about.services.cost': 'Obtaining estimated costs for diagnostics and treatment from clinics',
+    'about.services.arrival': 'Organization of arrival in Belarus (airport pickup, transfers - by agreement)',
+    'about.services.accommodation': 'Organization of accommodation (hotels, apartments, sanatoriums)',
+    'about.services.leisure': 'Organization of leisure, excursion and cultural programs',
+    'about.services.transfers': 'Organization of transfers within Belarus (by separate agreement)',
+    'about.services.communication': 'Information support and assistance in communication with clinics (translation, coordination of dates and procedures)',
+    
+    // About - Disclaimer
+    'about.disclaimer.title': 'Legal Disclaimer',
+    'about.disclaimer.text1': 'All medical services (diagnostics, treatment, surgical interventions, rehabilitation) are provided directly by medical institutions based on separate contracts between the patient and the respective clinic.',
+    'about.disclaimer.text2': 'Stanoprint Company:',
+    'about.disclaimer.important': 'Important:',
+    'about.disclaimer.point1': 'Is not a medical organization',
+    'about.disclaimer.point2': 'Does not provide medical services',
+    'about.disclaimer.point3': 'Does not interfere in the diagnosis and treatment process',
+    'about.disclaimer.point4': 'Is not responsible for medical decisions of doctors, treatment results, possible complications, side effects and changes in treatment costs due to medical necessity',
+    'about.disclaimer.permits': 'Tourism permits on the territory of the Republic of Belarus are issued in accordance with established procedures.',
+    
+    // About - Offices
+    'about.offices.title': 'Offices and Representations',
+    'about.offices.headquarters': 'Headquarters',
+    'about.offices.representation': 'Representation',
+    'about.offices.belarus.title': 'Belarus',
+    'about.offices.oman.title': 'Oman',
+    'about.offices.oman.reg': 'Registration number',
+    'about.offices.oman.address': 'Al Khuwair / Bousher / Governorate of Muscat',
     
     // Footer
     'footer.rights': 'All rights reserved',
