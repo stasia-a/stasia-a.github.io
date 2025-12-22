@@ -14,8 +14,8 @@ const Contacts = () => {
   
   const messengers = [
     { name: 'WhatsApp', icon: '💬', href: 'https://wa.me/375296532951', color: 'bg-green-500/10 hover:bg-green-500/20' },
-    { name: 'Telegram', icon: '✈️', href: 'https://t.me/medbelarus', color: 'bg-blue-500/10 hover:bg-blue-500/20' },
-    { name: 'Viber', icon: '📱', href: 'viber://chat?number=375296532951', color: 'bg-purple-500/10 hover:bg-purple-500/20' },
+    { name: 'Telegram', icon: '✈️', href: 'https://t.me/+375296532951', color: 'bg-blue-500/10 hover:bg-blue-500/20' },
+    { name: 'Imo', icon: '📞', href: 'https://imo.im/+375296532951', color: 'bg-cyan-500/10 hover:bg-cyan-500/20' },
   ];
   
   return (
