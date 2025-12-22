@@ -10,6 +10,7 @@ import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { toast } from 'sonner';
+import { supabase } from '@/integrations/supabase/client';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name is required').max(100),
@@ -45,14 +46,39 @@ const VipApplicationForm = ({ defaultPackage = 'gold' }: VipApplicationFormProps
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
     
-    // Simulate API call - in production, this would send to backend
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    try {
+      const { data: result, error } = await supabase.functions.invoke('send-to-telegram', {
+        body: {
+          type: 'vip',
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          whatsapp: data.whatsapp,
+          country: data.country,
+          vipPackage: data.vipPackage,
+          diagnosis: data.diagnosis,
+          message: data.message,
+        },
+      });
+
+      if (error) {
+        console.error('Error sending to Telegram:', error);
+        toast.error('Ошибка отправки. Попробуйте позже.');
+        setIsSubmitting(false);
+        return;
+      }
+
+      console.log('VIP Form submitted successfully:', result);
+      setIsSuccess(true);
+      toast.success(t('vipForm.success'));
+      reset();
+      
+      setTimeout(() => setIsSuccess(false), 5000);
+    } catch (error) {
+      console.error('Error:', error);
+      toast.error('Ошибка отправки. Попробуйте позже.');
+    }
     
-    setIsSuccess(true);
-    toast.success(t('vipForm.success'));
-    reset();
-    
-    setTimeout(() => setIsSuccess(false), 5000);
     setIsSubmitting(false);
   };
   
