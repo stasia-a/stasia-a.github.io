@@ -40,6 +40,9 @@ const Footer = () => {
                 <Link to="/tourism" className="text-sm text-primary-foreground/80 hover:text-gold transition-colors">
                   {t('nav.tourism')}
                 </Link>
+                <Link to="/vip-tourism" className="text-sm text-primary-foreground/80 hover:text-gold transition-colors">
+                  {t('nav.vipTourism')}
+                </Link>
                 <Link to="/institutions" className="text-sm text-primary-foreground/80 hover:text-gold transition-colors">
                   {t('nav.institutions')}
                 </Link>
