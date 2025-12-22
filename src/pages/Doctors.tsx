@@ -3,6 +3,7 @@ import { Award, Clock, GraduationCap, Building2, ArrowRight, MapPin } from 'luci
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import ostrovskyPhoto from '@/assets/doctors/ostrovsky.jpg';
 
 const Doctors = () => {
   const { t, dir } = useLanguage();
@@ -18,6 +19,7 @@ const Doctors = () => {
           specialtyKey: 'doctors.ostrovsky.specialty',
           experienceKey: 'doctors.ostrovsky.experience',
           clinicKey: 'doctors.ostrovsky.clinic',
+          photo: ostrovskyPhoto,
         },
         {
           nameKey: 'doctors.shket.name',
@@ -206,11 +208,17 @@ const Doctors = () => {
                 {group.doctors.map((doctor, index) => (
                   <div key={index} className="p-6 rounded-2xl bg-card border border-border card-hover">
                     {/* Avatar */}
-                    <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center">
-                      <span className="text-2xl font-bold text-gold">
-                        {t(doctor.nameKey).split(' ').slice(0, 2).map(n => n[0]).join('')}
-                      </span>
-                    </div>
+                    {doctor.photo ? (
+                      <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-gold">
+                        <img src={doctor.photo} alt={t(doctor.nameKey)} className="w-full h-full object-cover" />
+                      </div>
+                    ) : (
+                      <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center">
+                        <span className="text-2xl font-bold text-gold">
+                          {t(doctor.nameKey).split(' ').slice(0, 2).map(n => n[0]).join('')}
+                        </span>
+                      </div>
+                    )}
                     
                     {/* Name & Degree */}
                     <h3 className="font-bold text-lg text-foreground text-center mb-1">
