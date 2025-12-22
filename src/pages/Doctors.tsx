@@ -19,6 +19,7 @@ import dovnarPhoto from '@/assets/doctors/dovnar.jpg';
 import glybovskayaPhoto from '@/assets/doctors/glybovskaya.jpg';
 import bunyakPhoto from '@/assets/doctors/bunyak.jpg';
 import gizemovaPhoto from '@/assets/doctors/gizemova.png';
+import kuznetsovaPhoto from '@/assets/doctors/kuznetsova.jpg';
 
 const Doctors = () => {
   const { t, dir } = useLanguage();
@@ -187,6 +188,7 @@ const Doctors = () => {
           specialtyKey: 'doctors.kuznetsova.specialty',
           experienceKey: 'doctors.kuznetsova.experience',
           clinicKey: 'doctors.kuznetsova.clinic',
+          photo: kuznetsovaPhoto,
         },
       ],
     },
