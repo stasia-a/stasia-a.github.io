@@ -8,6 +8,7 @@ import shketPhoto from '@/assets/doctors/shket.jpg';
 import karanikPhoto from '@/assets/doctors/karanik.jpg';
 import gubarPhoto from '@/assets/doctors/gubar.jpg';
 import talabaevPhoto from '@/assets/doctors/talabaev.jpg';
+import aleinikovaPhoto from '@/assets/doctors/aleinikova.jpg';
 
 const Doctors = () => {
   const { t, dir } = useLanguage();
@@ -74,6 +75,7 @@ const Doctors = () => {
           specialtyKey: 'doctors.aleinikova.specialty',
           experienceKey: 'doctors.aleinikova.experience',
           clinicKey: 'doctors.aleinikova.clinic',
+          photo: aleinikovaPhoto,
         },
       ],
     },
