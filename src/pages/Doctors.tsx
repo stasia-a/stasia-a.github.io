@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ostrovskyPhoto from '@/assets/doctors/ostrovsky.jpg';
 import shketPhoto from '@/assets/doctors/shket.jpg';
+import karanikPhoto from '@/assets/doctors/karanik.jpg';
 
 const Doctors = () => {
   const { t, dir } = useLanguage();
@@ -55,6 +56,7 @@ const Doctors = () => {
           specialtyKey: 'doctors.karanik.specialty',
           experienceKey: 'doctors.karanik.experience',
           clinicKey: 'doctors.karanik.clinic',
+          photo: karanikPhoto,
         },
         {
           nameKey: 'doctors.gizemova.name',
