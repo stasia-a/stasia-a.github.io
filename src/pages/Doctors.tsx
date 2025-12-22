@@ -13,6 +13,7 @@ import sidorovichPhoto from '@/assets/doctors/sidorovich.jpg';
 import vasilevichPhoto from '@/assets/doctors/vasilevich.jpg';
 import burkoPhoto from '@/assets/doctors/burko.jpg';
 import geynoPhoto from '@/assets/doctors/geyno.jpg';
+import volkovPhoto from '@/assets/doctors/volkov.jpg';
 
 const Doctors = () => {
   const { t, dir } = useLanguage();
@@ -163,6 +164,7 @@ const Doctors = () => {
           specialtyKey: 'doctors.volkov.specialty',
           experienceKey: 'doctors.volkov.experience',
           clinicKey: 'doctors.volkov.clinic',
+          photo: volkovPhoto,
         },
       ],
     },
