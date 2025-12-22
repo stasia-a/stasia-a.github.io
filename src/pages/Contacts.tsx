@@ -8,7 +8,7 @@ const Contacts = () => {
   const contacts = [
     { icon: Phone, label: t('contact.phone'), value: '+375 29 653-29-51', href: 'tel:+375296532951' },
     { icon: Mail, label: t('contact.email'), value: 'charusin@mail.ru', href: 'mailto:charusin@mail.ru' },
-    { icon: MapPin, label: t('contact.address'), value: 'Minsk, Independence Ave 95', href: '#' },
+    { icon: MapPin, label: t('contact.address'), value: 'г. Минск, ул. Михася Лынькова, 15, оф. 407', href: '#' },
     { icon: Clock, label: t('contact.hours'), value: t('contact.hours.value'), href: '#' },
   ];
   
@@ -86,23 +86,29 @@ const Contacts = () => {
                 <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-gold/10">
                   <div className="text-center">
                     <MapPin className="w-12 h-12 text-gold mx-auto mb-2" />
-                    <p className="text-foreground font-medium">Minsk, Belarus</p>
-                    <p className="text-sm text-muted-foreground">Independence Avenue 95</p>
+                    <p className="text-foreground font-medium">Минск, Беларусь</p>
+                    <p className="text-sm text-muted-foreground">ул. Михася Лынькова, 15, офис 407</p>
                   </div>
                 </div>
               </div>
               
               <div className="p-6 rounded-2xl bg-card border border-border">
-                <h3 className="font-semibold text-foreground mb-4">Office Information</h3>
+                <h3 className="font-semibold text-foreground mb-4">Информация об организации</h3>
                 <div className="space-y-3 text-sm">
                   <p className="text-muted-foreground">
-                    <strong className="text-foreground">Address:</strong> Independence Avenue 95, Office 512, Minsk 220050, Belarus
+                    <strong className="text-foreground">Организация:</strong> ООО "Станопринт"
                   </p>
                   <p className="text-muted-foreground">
-                    <strong className="text-foreground">Working Hours:</strong> Sunday - Thursday: 9:00 AM - 6:00 PM
+                    <strong className="text-foreground">Директор:</strong> Чарушин Юрий Александрович
                   </p>
                   <p className="text-muted-foreground">
-                    <strong className="text-foreground">Languages:</strong> Arabic, Russian, English
+                    <strong className="text-foreground">Адрес:</strong> 220124, Республика Беларусь, г. Минск, ул. Михася Лынькова, д. 15, офис 407
+                  </p>
+                  <p className="text-muted-foreground">
+                    <strong className="text-foreground">Режим работы:</strong> Воскресенье - Четверг: 9:00 - 18:00
+                  </p>
+                  <p className="text-muted-foreground">
+                    <strong className="text-foreground">Языки:</strong> Арабский, Русский, Английский
                   </p>
                 </div>
               </div>
