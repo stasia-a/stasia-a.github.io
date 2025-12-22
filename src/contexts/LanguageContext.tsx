@@ -956,6 +956,24 @@ const translations: Record<Language, Record<string, string>> = {
     
     'vip.cta.title': 'السياحة العلاجية VIP في بيلاروسيا - ليست رفاهية، بل دقة وسرعة واحترام للمريض',
     'vip.cta.description': 'نحن نجمع بين أفضل العيادات في البلاد والخدمة الشخصية على المستوى الدولي.',
+    
+    // VIP Form
+    'vipForm.badge': 'طلب VIP',
+    'vipForm.title': 'تقديم طلب VIP',
+    'vipForm.subtitle': 'املأ النموذج وسنتصل بك خلال 24 ساعة',
+    'vipForm.selectPackage': 'اختر باقة VIP',
+    'vipForm.selected': 'تم الاختيار',
+    'vipForm.country': 'البلد',
+    'vipForm.countryPlaceholder': 'أدخل بلدك',
+    'vipForm.diagnosisPlaceholder': 'صف تشخيصك أو حالتك الطبية',
+    'vipForm.specialRequests': 'طلبات خاصة',
+    'vipForm.specialRequestsPlaceholder': 'تفضيلات الإقامة، متطلبات الطعام، تواريخ السفر، إلخ.',
+    'vipForm.submit': 'تقديم طلب VIP',
+    'vipForm.submitting': 'جاري الإرسال...',
+    'vipForm.success': 'تم استلام طلبك!',
+    'vipForm.successDesc': 'سيتصل بك منسقنا VIP خلال 24 ساعة',
+    'vipForm.privacy': 'نحن نضمن السرية الكاملة لجميع المعلومات المقدمة',
+    'vipForm.scrollToForm': 'تقديم طلب VIP',
   },
   ru: {
     // Navigation
@@ -1872,6 +1890,24 @@ const translations: Record<Language, Record<string, string>> = {
     
     'vip.cta.title': 'VIP-медицинский туризм в Беларуси — это не роскошь, а точность, скорость и уважение к пациенту',
     'vip.cta.description': 'Мы объединяем лучшие клиники страны с персональным сервисом международного уровня.',
+    
+    // VIP Form
+    'vipForm.badge': 'VIP-заявка',
+    'vipForm.title': 'Оставить VIP-заявку',
+    'vipForm.subtitle': 'Заполните форму и мы свяжемся с вами в течение 24 часов',
+    'vipForm.selectPackage': 'Выберите VIP-пакет',
+    'vipForm.selected': 'Выбрано',
+    'vipForm.country': 'Страна',
+    'vipForm.countryPlaceholder': 'Укажите вашу страну',
+    'vipForm.diagnosisPlaceholder': 'Опишите ваш диагноз или медицинскую ситуацию',
+    'vipForm.specialRequests': 'Особые пожелания',
+    'vipForm.specialRequestsPlaceholder': 'Предпочтения по проживанию, питанию, даты поездки и т.д.',
+    'vipForm.submit': 'Отправить VIP-заявку',
+    'vipForm.submitting': 'Отправка...',
+    'vipForm.success': 'Ваша заявка получена!',
+    'vipForm.successDesc': 'Наш VIP-координатор свяжется с вами в течение 24 часов',
+    'vipForm.privacy': 'Мы гарантируем полную конфиденциальность всей предоставленной информации',
+    'vipForm.scrollToForm': 'Оставить VIP-заявку',
   },
   en: {
     // Navigation
@@ -2793,6 +2829,24 @@ const translations: Record<Language, Record<string, string>> = {
     
     'vip.cta.title': 'VIP Medical Tourism in Belarus is not luxury, but precision, speed, and respect for the patient',
     'vip.cta.description': 'We combine the best clinics in the country with personalized service at an international level.',
+    
+    // VIP Form
+    'vipForm.badge': 'VIP Request',
+    'vipForm.title': 'Submit VIP Request',
+    'vipForm.subtitle': 'Fill out the form and we will contact you within 24 hours',
+    'vipForm.selectPackage': 'Select VIP Package',
+    'vipForm.selected': 'Selected',
+    'vipForm.country': 'Country',
+    'vipForm.countryPlaceholder': 'Enter your country',
+    'vipForm.diagnosisPlaceholder': 'Describe your diagnosis or medical situation',
+    'vipForm.specialRequests': 'Special Requests',
+    'vipForm.specialRequestsPlaceholder': 'Accommodation preferences, dietary requirements, travel dates, etc.',
+    'vipForm.submit': 'Submit VIP Request',
+    'vipForm.submitting': 'Submitting...',
+    'vipForm.success': 'Your request has been received!',
+    'vipForm.successDesc': 'Our VIP coordinator will contact you within 24 hours',
+    'vipForm.privacy': 'We guarantee complete confidentiality of all information provided',
+    'vipForm.scrollToForm': 'Submit VIP Request',
   },
 };
 
