@@ -7,6 +7,7 @@ import ostrovskyPhoto from '@/assets/doctors/ostrovsky.jpg';
 import shketPhoto from '@/assets/doctors/shket.jpg';
 import karanikPhoto from '@/assets/doctors/karanik.jpg';
 import gubarPhoto from '@/assets/doctors/gubar.jpg';
+import talabaevPhoto from '@/assets/doctors/talabaev.jpg';
 
 const Doctors = () => {
   const { t, dir } = useLanguage();
@@ -92,6 +93,7 @@ const Doctors = () => {
           specialtyKey: 'doctors.talabaev.specialty',
           experienceKey: 'doctors.talabaev.experience',
           clinicKey: 'doctors.talabaev.clinic',
+          photo: talabaevPhoto,
         },
         {
           nameKey: 'doctors.vasilevich.name',
