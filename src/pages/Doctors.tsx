@@ -15,6 +15,7 @@ import burkoPhoto from '@/assets/doctors/burko.jpg';
 import geynoPhoto from '@/assets/doctors/geyno.jpg';
 import volkovPhoto from '@/assets/doctors/volkov.jpg';
 import olikhverPhoto from '@/assets/doctors/olikhver.jpg';
+import dovnarPhoto from '@/assets/doctors/dovnar.jpg';
 
 const Doctors = () => {
   const { t, dir } = useLanguage();
@@ -54,6 +55,7 @@ const Doctors = () => {
           specialtyKey: 'doctors.dovnar.specialty',
           experienceKey: 'doctors.dovnar.experience',
           clinicKey: 'doctors.dovnar.clinic',
+          photo: dovnarPhoto,
         },
       ],
     },
