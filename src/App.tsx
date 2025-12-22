@@ -7,6 +7,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Tourism from "./pages/Tourism";
+import VipTourism from "./pages/VipTourism";
 import Institutions from "./pages/Institutions";
 import Doctors from "./pages/Doctors";
 import Prices from "./pages/Prices";
@@ -28,6 +29,7 @@ function App() {
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<About />} />
               <Route path="/tourism" element={<Tourism />} />
+              <Route path="/vip-tourism" element={<VipTourism />} />
               <Route path="/institutions" element={<Institutions />} />
               <Route path="/doctors" element={<Doctors />} />
               <Route path="/prices" element={<Prices />} />
