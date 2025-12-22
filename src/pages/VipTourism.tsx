@@ -3,6 +3,7 @@ import { ArrowRight, CheckCircle, Crown, Shield, Clock, Users, Lock, Home, Utens
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import VipApplicationForm from '@/components/forms/VipApplicationForm';
 
 const VipTourism = () => {
   const { t, dir } = useLanguage();
@@ -337,19 +338,39 @@ const VipTourism = () => {
         </div>
       </section>
       
-      {/* Final CTA */}
-      <section className="py-20 gradient-hero relative overflow-hidden" dir={dir}>
+      {/* VIP Application Form */}
+      <section className="py-20 gradient-hero relative overflow-hidden" dir={dir} id="vip-form">
         <div className="absolute inset-0 arabic-pattern opacity-20" />
         <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/20 text-gold text-sm font-medium mb-4">
+                <Crown className="w-4 h-4" />
+                {t('vipForm.badge')}
+              </div>
+              <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">{t('vipForm.title')}</h2>
+              <p className="text-lg text-primary-foreground/90">{t('vipForm.subtitle')}</p>
+            </div>
+            
+            <div className="p-8 rounded-2xl bg-card border border-border shadow-xl">
+              <VipApplicationForm />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Final CTA */}
+      <section className="py-16 bg-background" dir={dir}>
+        <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground mb-6">{t('vip.cta.title')}</h2>
-            <p className="text-lg text-primary-foreground/90 mb-8">{t('vip.cta.description')}</p>
-            <Link to="/apply">
-              <Button variant="hero" size="xl" className="gap-2">
-                {t('hero.cta')}
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">{t('vip.cta.title')}</h2>
+            <p className="text-muted-foreground mb-6">{t('vip.cta.description')}</p>
+            <a href="#vip-form">
+              <Button variant="gold" size="lg" className="gap-2">
+                {t('vipForm.scrollToForm')}
                 <ArrowRight className="w-5 h-5" />
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
