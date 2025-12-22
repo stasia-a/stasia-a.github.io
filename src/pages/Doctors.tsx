@@ -12,6 +12,7 @@ import aleinikovaPhoto from '@/assets/doctors/aleinikova.jpg';
 import sidorovichPhoto from '@/assets/doctors/sidorovich.jpg';
 import vasilevichPhoto from '@/assets/doctors/vasilevich.jpg';
 import burkoPhoto from '@/assets/doctors/burko.jpg';
+import geynoPhoto from '@/assets/doctors/geyno.jpg';
 
 const Doctors = () => {
   const { t, dir } = useLanguage();
@@ -135,6 +136,7 @@ const Doctors = () => {
           specialtyKey: 'doctors.geyno.specialty',
           experienceKey: 'doctors.geyno.experience',
           clinicKey: 'doctors.geyno.clinic',
+          photo: geynoPhoto,
         },
         {
           nameKey: 'doctors.olikhver.name',
