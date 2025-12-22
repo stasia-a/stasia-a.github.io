@@ -23,7 +23,6 @@ const Header = () => {
     { href: '/institutions', label: t('nav.institutions') },
     { href: '/doctors', label: t('nav.doctors') },
     { href: '/prices', label: t('nav.prices') },
-    { href: '/contacts', label: t('nav.contacts') },
   ];
   
   const languages = [
