@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Send, Loader2, CheckCircle, Crown, Sparkles } from 'lucide-react';
+import { Send, Loader2, CheckCircle, Crown, Sparkles, RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -11,6 +11,7 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
+import { useCaptcha } from '@/hooks/useCaptcha';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name is required').max(100),
@@ -33,6 +34,7 @@ const VipApplicationForm = ({ defaultPackage = 'gold' }: VipApplicationFormProps
   const { t, dir } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const { captcha, userAnswer, setUserAnswer, error: captchaError, refreshCaptcha, validateCaptcha } = useCaptcha();
   
   const { register, handleSubmit, formState: { errors }, reset, watch, setValue } = useForm<FormData>({
     resolver: zodResolver(formSchema),
@@ -44,6 +46,10 @@ const VipApplicationForm = ({ defaultPackage = 'gold' }: VipApplicationFormProps
   const selectedPackage = watch('vipPackage');
   
   const onSubmit = async (data: FormData) => {
+    if (!validateCaptcha()) {
+      return;
+    }
+    
     setIsSubmitting(true);
     
     try {
@@ -72,6 +78,7 @@ const VipApplicationForm = ({ defaultPackage = 'gold' }: VipApplicationFormProps
       setIsSuccess(true);
       toast.success(t('vipForm.success'));
       reset();
+      refreshCaptcha();
       
       setTimeout(() => setIsSuccess(false), 5000);
     } catch (error) {
@@ -247,6 +254,33 @@ const VipApplicationForm = ({ defaultPackage = 'gold' }: VipApplicationFormProps
           placeholder={t('vipForm.specialRequestsPlaceholder')}
           rows={4}
         />
+      </div>
+      
+      {/* Captcha */}
+      <div className="space-y-2">
+        <Label>Подтвердите, что вы не робот *</Label>
+        <div className="flex items-center gap-3">
+          <div className="px-4 py-2 bg-muted rounded-lg font-mono text-lg font-bold select-none">
+            {captcha.question}
+          </div>
+          <Input
+            type="number"
+            value={userAnswer}
+            onChange={(e) => setUserAnswer(e.target.value)}
+            placeholder="Ответ"
+            className={`w-24 ${captchaError ? 'border-destructive' : ''}`}
+          />
+          <Button
+            type="button"
+            variant="outline"
+            size="icon"
+            onClick={refreshCaptcha}
+            title="Обновить"
+          >
+            <RefreshCw className="w-4 h-4" />
+          </Button>
+        </div>
+        {captchaError && <p className="text-sm text-destructive">{captchaError}</p>}
       </div>
       
       {/* Submit */}
