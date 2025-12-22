@@ -6,6 +6,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import ostrovskyPhoto from '@/assets/doctors/ostrovsky.jpg';
 import shketPhoto from '@/assets/doctors/shket.jpg';
 import karanikPhoto from '@/assets/doctors/karanik.jpg';
+import gubarPhoto from '@/assets/doctors/gubar.jpg';
 
 const Doctors = () => {
   const { t, dir } = useLanguage();
@@ -37,6 +38,7 @@ const Doctors = () => {
           specialtyKey: 'doctors.gubar.specialty',
           experienceKey: 'doctors.gubar.experience',
           clinicKey: 'doctors.gubar.clinic',
+          photo: gubarPhoto,
         },
         {
           nameKey: 'doctors.dovnar.name',
