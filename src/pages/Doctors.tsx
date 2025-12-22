@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Award, Clock, Users, ArrowRight, Star } from 'lucide-react';
+import { Award, Clock, GraduationCap, Building2, ArrowRight, MapPin } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -7,70 +7,156 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const Doctors = () => {
   const { t, dir } = useLanguage();
   
-  const doctors = [
+  // Clinics grouped by department
+  const clinicGroups = [
     {
-      name: 'Prof. Alexander Mrochek',
-      specialty: 'Cardiac Surgery',
-      experience: 35,
-      operations: 8000,
-      education: 'MD, PhD, Professor',
-      languages: ['Russian', 'English'],
+      clinicKey: 'cardiology',
+      doctors: [
+        {
+          nameKey: 'doctors.ostrovsky.name',
+          degreeKey: 'doctors.ostrovsky.degree',
+          specialtyKey: 'doctors.ostrovsky.specialty',
+          experienceKey: 'doctors.ostrovsky.experience',
+          clinicKey: 'doctors.ostrovsky.clinic',
+        },
+        {
+          nameKey: 'doctors.shket.name',
+          degreeKey: 'doctors.shket.degree',
+          specialtyKey: 'doctors.shket.specialty',
+          experienceKey: 'doctors.shket.experience',
+          clinicKey: 'doctors.shket.clinic',
+        },
+        {
+          nameKey: 'doctors.gubar.name',
+          degreeKey: 'doctors.gubar.degree',
+          specialtyKey: 'doctors.gubar.specialty',
+          experienceKey: 'doctors.gubar.experience',
+          clinicKey: 'doctors.gubar.clinic',
+        },
+        {
+          nameKey: 'doctors.dovnar.name',
+          degreeKey: 'doctors.dovnar.degree',
+          specialtyKey: 'doctors.dovnar.specialty',
+          experienceKey: 'doctors.dovnar.experience',
+          clinicKey: 'doctors.dovnar.clinic',
+        },
+      ],
     },
     {
-      name: 'Dr. Sergey Krasny',
-      specialty: 'Oncology',
-      experience: 28,
-      operations: 5500,
-      education: 'MD, PhD',
-      languages: ['Russian', 'English'],
+      clinicKey: 'oncology',
+      doctors: [
+        {
+          nameKey: 'doctors.karanik.name',
+          degreeKey: 'doctors.karanik.degree',
+          specialtyKey: 'doctors.karanik.specialty',
+          experienceKey: 'doctors.karanik.experience',
+          clinicKey: 'doctors.karanik.clinic',
+        },
+        {
+          nameKey: 'doctors.gizemova.name',
+          degreeKey: 'doctors.gizemova.degree',
+          specialtyKey: 'doctors.gizemova.specialty',
+          experienceKey: 'doctors.gizemova.experience',
+          clinicKey: 'doctors.gizemova.clinic',
+        },
+        {
+          nameKey: 'doctors.aleinikova.name',
+          degreeKey: 'doctors.aleinikova.degree',
+          specialtyKey: 'doctors.aleinikova.specialty',
+          experienceKey: 'doctors.aleinikova.experience',
+          clinicKey: 'doctors.aleinikova.clinic',
+        },
+      ],
     },
     {
-      name: 'Dr. Alexander Beletsky',
-      specialty: 'Orthopedics',
-      experience: 25,
-      operations: 4200,
-      education: 'MD, PhD, Professor',
-      languages: ['Russian', 'English', 'German'],
+      clinicKey: 'neurosurgery',
+      doctors: [
+        {
+          nameKey: 'doctors.sidorovich.name',
+          degreeKey: 'doctors.sidorovich.degree',
+          specialtyKey: 'doctors.sidorovich.specialty',
+          experienceKey: 'doctors.sidorovich.experience',
+          clinicKey: 'doctors.sidorovich.clinic',
+        },
+        {
+          nameKey: 'doctors.talabaev.name',
+          degreeKey: 'doctors.talabaev.degree',
+          specialtyKey: 'doctors.talabaev.specialty',
+          experienceKey: 'doctors.talabaev.experience',
+          clinicKey: 'doctors.talabaev.clinic',
+        },
+        {
+          nameKey: 'doctors.vasilevich.name',
+          degreeKey: 'doctors.vasilevich.degree',
+          specialtyKey: 'doctors.vasilevich.specialty',
+          experienceKey: 'doctors.vasilevich.experience',
+          clinicKey: 'doctors.vasilevich.clinic',
+        },
+        {
+          nameKey: 'doctors.bunyak.name',
+          degreeKey: 'doctors.bunyak.degree',
+          specialtyKey: 'doctors.bunyak.specialty',
+          experienceKey: 'doctors.bunyak.experience',
+          clinicKey: 'doctors.bunyak.clinic',
+        },
+      ],
     },
     {
-      name: 'Dr. Tatiana Pavlovich',
-      specialty: 'Reproductive Medicine',
-      experience: 20,
-      operations: 3000,
-      education: 'MD, PhD',
-      languages: ['Russian', 'English'],
+      clinicKey: 'vip',
+      doctors: [
+        {
+          nameKey: 'doctors.burko.name',
+          degreeKey: 'doctors.burko.degree',
+          specialtyKey: 'doctors.burko.specialty',
+          experienceKey: 'doctors.burko.experience',
+          clinicKey: 'doctors.burko.clinic',
+        },
+        {
+          nameKey: 'doctors.geyno.name',
+          degreeKey: 'doctors.geyno.degree',
+          specialtyKey: 'doctors.geyno.specialty',
+          experienceKey: 'doctors.geyno.experience',
+          clinicKey: 'doctors.geyno.clinic',
+        },
+        {
+          nameKey: 'doctors.olikhver.name',
+          degreeKey: 'doctors.olikhver.degree',
+          specialtyKey: 'doctors.olikhver.specialty',
+          experienceKey: 'doctors.olikhver.experience',
+          clinicKey: 'doctors.olikhver.clinic',
+        },
+        {
+          nameKey: 'doctors.glybovskaya.name',
+          degreeKey: 'doctors.glybovskaya.degree',
+          specialtyKey: 'doctors.glybovskaya.specialty',
+          experienceKey: 'doctors.glybovskaya.experience',
+          clinicKey: 'doctors.glybovskaya.clinic',
+        },
+      ],
     },
     {
-      name: 'Prof. Arseny Fedorov',
-      specialty: 'Neurosurgery',
-      experience: 30,
-      operations: 6000,
-      education: 'MD, PhD, Professor',
-      languages: ['Russian', 'English'],
+      clinicKey: 'orthopedics',
+      doctors: [
+        {
+          nameKey: 'doctors.volkov.name',
+          degreeKey: 'doctors.volkov.degree',
+          specialtyKey: 'doctors.volkov.specialty',
+          experienceKey: 'doctors.volkov.experience',
+          clinicKey: 'doctors.volkov.clinic',
+        },
+      ],
     },
     {
-      name: 'Dr. Oleg Korolev',
-      specialty: 'Transplantology',
-      experience: 22,
-      operations: 1800,
-      education: 'MD, PhD',
-      languages: ['Russian', 'English'],
-    },
-    {
-      name: 'Dr. Marina Sidorenko',
-      specialty: 'Cardiology',
-      experience: 18,
-      operations: 2500,
-      education: 'MD, PhD',
-      languages: ['Russian', 'English', 'Arabic'],
-    },
-    {
-      name: 'Prof. Vladimir Pilotovich',
-      specialty: 'Nephrology',
-      experience: 32,
-      operations: 4800,
-      education: 'MD, PhD, Professor',
-      languages: ['Russian', 'English'],
+      clinicKey: 'reproductive',
+      doctors: [
+        {
+          nameKey: 'doctors.kuznetsova.name',
+          degreeKey: 'doctors.kuznetsova.degree',
+          specialtyKey: 'doctors.kuznetsova.specialty',
+          experienceKey: 'doctors.kuznetsova.experience',
+          clinicKey: 'doctors.kuznetsova.clinic',
+        },
+      ],
     },
   ];
   
@@ -94,53 +180,71 @@ const Doctors = () => {
         </div>
       </section>
       
-      {/* Doctors Grid */}
+      {/* Doctors by Clinic */}
       <section className="py-20 bg-background" dir={dir}>
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {doctors.map((doctor, index) => (
-              <div key={index} className="p-6 rounded-2xl bg-card border border-border card-hover text-center">
-                {/* Avatar */}
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center">
-                  <span className="text-3xl font-bold text-gold">
-                    {doctor.name.split(' ').map(n => n[0]).join('')}
-                  </span>
+          {clinicGroups.map((group, groupIndex) => (
+            <div key={groupIndex} className="mb-16 last:mb-0">
+              {/* Clinic Header */}
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center">
+                  <Building2 className="w-6 h-6 text-gold" />
                 </div>
-                
-                {/* Name & Specialty */}
-                <h3 className="font-bold text-lg text-foreground mb-1">{doctor.name}</h3>
-                <p className="text-sm text-primary font-medium mb-2">{doctor.specialty}</p>
-                <p className="text-xs text-muted-foreground mb-4">{doctor.education}</p>
-                
-                {/* Stats */}
-                <div className="grid grid-cols-2 gap-2 mb-4">
-                  <div className="p-2 rounded-lg bg-secondary/50">
-                    <div className="flex items-center justify-center gap-1 text-gold">
-                      <Clock className="w-3 h-3" />
-                      <span className="font-bold text-sm">{doctor.experience}</span>
-                    </div>
-                    <p className="text-xs text-muted-foreground">{t('doctors.experience')}</p>
-                  </div>
-                  <div className="p-2 rounded-lg bg-secondary/50">
-                    <div className="flex items-center justify-center gap-1 text-emerald">
-                      <Award className="w-3 h-3" />
-                      <span className="font-bold text-sm">{doctor.operations.toLocaleString()}</span>
-                    </div>
-                    <p className="text-xs text-muted-foreground">{t('doctors.operations')}</p>
-                  </div>
-                </div>
-                
-                {/* Languages */}
-                <div className="flex flex-wrap justify-center gap-1">
-                  {doctor.languages.map((lang, i) => (
-                    <span key={i} className="px-2 py-0.5 rounded bg-gold/10 text-xs font-medium text-gold-dark">
-                      {lang}
-                    </span>
-                  ))}
+                <div>
+                  <h2 className="text-2xl font-bold text-foreground">
+                    {t(`doctors.clinic.${group.clinicKey}.name`)}
+                  </h2>
+                  <p className="text-sm text-muted-foreground flex items-center gap-1">
+                    <MapPin className="w-4 h-4" />
+                    {t(`doctors.clinic.${group.clinicKey}.address`)}
+                  </p>
                 </div>
               </div>
-            ))}
-          </div>
+              
+              {/* Doctors Grid */}
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {group.doctors.map((doctor, index) => (
+                  <div key={index} className="p-6 rounded-2xl bg-card border border-border card-hover">
+                    {/* Avatar */}
+                    <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center">
+                      <span className="text-2xl font-bold text-gold">
+                        {t(doctor.nameKey).split(' ').slice(0, 2).map(n => n[0]).join('')}
+                      </span>
+                    </div>
+                    
+                    {/* Name & Degree */}
+                    <h3 className="font-bold text-lg text-foreground text-center mb-1">
+                      {t(doctor.nameKey)}
+                    </h3>
+                    <div className="flex items-center justify-center gap-1 mb-2">
+                      <GraduationCap className="w-4 h-4 text-gold" />
+                      <p className="text-xs text-muted-foreground">{t(doctor.degreeKey)}</p>
+                    </div>
+                    
+                    {/* Specialty */}
+                    <p className="text-sm text-primary font-medium text-center mb-3">
+                      {t(doctor.specialtyKey)}
+                    </p>
+                    
+                    {/* Experience */}
+                    <div className="p-3 rounded-lg bg-secondary/50 mb-3">
+                      <div className="flex items-center justify-center gap-2 text-gold">
+                        <Clock className="w-4 h-4" />
+                        <span className="font-bold text-sm">{t(doctor.experienceKey)}</span>
+                      </div>
+                      <p className="text-xs text-muted-foreground text-center">{t('doctors.experience')}</p>
+                    </div>
+                    
+                    {/* Clinic */}
+                    <div className="flex items-center justify-center gap-1 text-xs text-muted-foreground">
+                      <Building2 className="w-3 h-3" />
+                      <span>{t(doctor.clinicKey)}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
           
           {/* CTA */}
           <div className="text-center mt-12">

@@ -570,10 +570,132 @@ const translations: Record<Language, Record<string, string>> = {
     'institutions.summary.point5': 'لا انتظار وعلاج سريع',
     
     // Doctors
-    'doctors.title': 'أطباؤنا',
-    'doctors.subtitle': 'نخبة من الأطباء المتخصصين ذوي الخبرة العالية',
-    'doctors.experience': 'سنة خبرة',
+    'doctors.title': 'أطباؤنا الرائدون',
+    'doctors.subtitle': 'نخبة من الأطباء المتخصصين في المؤسسات الطبية الرائدة في بيلاروسيا',
+    'doctors.experience': 'سنوات الخبرة',
     'doctors.operations': 'عملية ناجحة',
+    
+    // Doctor Clinics
+    'doctors.clinic.cardiology.name': 'مركز RNPC لأمراض القلب',
+    'doctors.clinic.cardiology.address': 'مينسك، شارع روزا لوكسمبورغ، 110ب',
+    'doctors.clinic.oncology.name': 'مركز NNPC للأورام والأشعة الطبية باسم ن.ن. ألكسندروف',
+    'doctors.clinic.oncology.address': 'منطقة مينسك، قرية ليسنوي',
+    'doctors.clinic.neurosurgery.name': 'مركز RNPC لطب الأعصاب وجراحة الأعصاب',
+    'doctors.clinic.neurosurgery.address': 'مينسك، شارع فرانسيسك سكارينا، 24',
+    'doctors.clinic.vip.name': 'المركز الطبي السريري الجمهوري (VIP-Clinic)',
+    'doctors.clinic.vip.address': 'مينسك، جدانوفيتشي، مبنى 81، بناء 5',
+    'doctors.clinic.orthopedics.name': 'مركز RNPC للإصابات وجراحة العظام',
+    'doctors.clinic.orthopedics.address': 'مينسك، شارع كيجيفاتوفا، 60',
+    'doctors.clinic.reproductive.name': 'المركز الدولي لتقنيات الإنجاب BINA',
+    'doctors.clinic.reproductive.address': 'مينسك، شارع نيمانسكايا، 67',
+    
+    // Individual Doctors - Cardiology
+    'doctors.ostrovsky.name': 'يوري بتروفيتش أوستروفسكي',
+    'doctors.ostrovsky.degree': 'دكتور في العلوم الطبية، أستاذ، أكاديمي',
+    'doctors.ostrovsky.specialty': 'جراحة القلب، زراعة القلب',
+    'doctors.ostrovsky.experience': 'أكثر من 30 عاماً',
+    'doctors.ostrovsky.clinic': 'مركز RNPC لأمراض القلب',
+    
+    'doctors.shket.name': 'ألكسندر بافلوفيتش شكيت',
+    'doctors.shket.degree': 'مرشح العلوم الطبية',
+    'doctors.shket.specialty': 'جراحة القلب',
+    'doctors.shket.experience': 'أكثر من 27 عاماً',
+    'doctors.shket.clinic': 'المركز الطبي السريري الجمهوري',
+    
+    'doctors.gubar.name': 'إيلينا نيكولايفنا غوبار',
+    'doctors.gubar.degree': 'طبيب من أعلى فئة تأهيلية',
+    'doctors.gubar.specialty': 'أمراض القلب',
+    'doctors.gubar.experience': 'أكثر من 38 عاماً',
+    'doctors.gubar.clinic': 'المركز الطبي السريري الجمهوري',
+    
+    'doctors.dovnar.name': 'نيللي ماريانوفنا دوفنار',
+    'doctors.dovnar.degree': 'طبيب متخصص',
+    'doctors.dovnar.specialty': 'أمراض القلب',
+    'doctors.dovnar.experience': '28 عاماً',
+    'doctors.dovnar.clinic': 'المركز الطبي السريري الجمهوري',
+    
+    // Individual Doctors - Oncology
+    'doctors.karanik.name': 'فلاديمير ستيبانوفيتش كارانيك',
+    'doctors.karanik.degree': 'مرشح العلوم الطبية',
+    'doctors.karanik.specialty': 'أورام الصدر، جراحة الرئة',
+    'doctors.karanik.experience': 'سنوات عديدة',
+    'doctors.karanik.clinic': 'مركز RNPC للأورام',
+    
+    'doctors.gizemova.name': 'أولغا أناتوليفنا غيزيموفا',
+    'doctors.gizemova.degree': 'مرشح العلوم الطبية',
+    'doctors.gizemova.specialty': 'الأورام الإشعاعية',
+    'doctors.gizemova.experience': 'سنوات عديدة',
+    'doctors.gizemova.clinic': 'مركز RNPC للأورام',
+    
+    'doctors.aleinikova.name': 'أولغا فيتاليفنا أليينيكوفا',
+    'doctors.aleinikova.degree': 'دكتور في العلوم الطبية، أستاذ',
+    'doctors.aleinikova.specialty': 'أورام الأطفال وأمراض الدم',
+    'doctors.aleinikova.experience': 'سنوات عديدة',
+    'doctors.aleinikova.clinic': 'مركز أبحاث أورام الأطفال',
+    
+    // Individual Doctors - Neurosurgery
+    'doctors.sidorovich.name': 'ريشارد رومالدوفيتش سيدوروفيتش',
+    'doctors.sidorovich.degree': 'دكتور في العلوم الطبية، أستاذ',
+    'doctors.sidorovich.specialty': 'طب الأعصاب وجراحة الأعصاب (مدير المركز)',
+    'doctors.sidorovich.experience': 'سنوات عديدة',
+    'doctors.sidorovich.clinic': 'مركز RNPC لجراحة الأعصاب',
+    
+    'doctors.talabaev.name': 'ميخائيل فلاديميروفيتش تالاباييف',
+    'doctors.talabaev.degree': 'دكتور في العلوم الطبية، دوتسنت',
+    'doctors.talabaev.specialty': 'جراحة أعصاب الأطفال',
+    'doctors.talabaev.experience': 'سنوات عديدة',
+    'doctors.talabaev.clinic': 'مركز RNPC لجراحة الأعصاب',
+    
+    'doctors.vasilevich.name': 'إدوارد نيكولايفيتش فاسيليفيتش',
+    'doctors.vasilevich.degree': 'مرشح العلوم الطبية، دوتسنت',
+    'doctors.vasilevich.specialty': 'جراحة الأعصاب',
+    'doctors.vasilevich.experience': 'سنوات عديدة',
+    'doctors.vasilevich.clinic': 'مركز RNPC لجراحة الأعصاب',
+    
+    'doctors.bunyak.name': 'آنا غيورغيفنا بونياك',
+    'doctors.bunyak.degree': 'مرشح العلوم الطبية، دوتسنت',
+    'doctors.bunyak.specialty': 'طب الأعصاب',
+    'doctors.bunyak.experience': 'سنوات عديدة',
+    'doctors.bunyak.clinic': 'مركز RNPC لجراحة الأعصاب',
+    
+    // Individual Doctors - VIP Clinic
+    'doctors.burko.name': 'فلاديمير دميتريفيتش بوركو',
+    'doctors.burko.degree': 'مرشح العلوم',
+    'doctors.burko.specialty': 'المسالك البولية',
+    'doctors.burko.experience': '34 عاماً',
+    'doctors.burko.clinic': 'المركز الطبي السريري الجمهوري',
+    
+    'doctors.geyno.name': 'إيلينا فلاديميروفنا غيينو',
+    'doctors.geyno.degree': 'طبيب متخصص',
+    'doctors.geyno.specialty': 'الأنف والأذن والحنجرة',
+    'doctors.geyno.experience': '32 عاماً',
+    'doctors.geyno.clinic': 'المركز الطبي السريري الجمهوري',
+    
+    'doctors.olikhver.name': 'يوري أليكسييفيتش أوليخفير',
+    'doctors.olikhver.degree': 'جراح قلب',
+    'doctors.olikhver.specialty': 'جراحة القلب',
+    'doctors.olikhver.experience': '24 عاماً',
+    'doctors.olikhver.clinic': 'المركز الطبي السريري الجمهوري',
+    
+    'doctors.glybovskaya.name': 'تاتيانا فيكينتيفنا غليبوفسكايا',
+    'doctors.glybovskaya.degree': 'مرشح العلوم الطبية',
+    'doctors.glybovskaya.specialty': 'أمراض القلب',
+    'doctors.glybovskaya.experience': '31 عاماً',
+    'doctors.glybovskaya.clinic': 'المركز الطبي السريري الجمهوري',
+    
+    // Individual Doctors - Orthopedics
+    'doctors.volkov.name': 'سيرغي إيفانوفيتش فولكوف',
+    'doctors.volkov.degree': 'طبيب متخصص',
+    'doctors.volkov.specialty': 'جراحة العظام، استبدال المفاصل',
+    'doctors.volkov.experience': 'أكثر من 25 عاماً',
+    'doctors.volkov.clinic': 'مركز RNPC للإصابات وجراحة العظام',
+    
+    // Individual Doctors - Reproductive
+    'doctors.kuznetsova.name': 'ماريا بتروفنا كوزنتسوفا',
+    'doctors.kuznetsova.degree': 'طبيب متخصص',
+    'doctors.kuznetsova.specialty': 'تقنيات الإنجاب المساعدة / أطفال الأنابيب',
+    'doctors.kuznetsova.experience': 'أكثر من 15 عاماً',
+    'doctors.kuznetsova.clinic': 'المركز الدولي لتقنيات الإنجاب BINA',
     
     // Prices
     'prices.title': 'الأسعار',
@@ -1119,10 +1241,132 @@ const translations: Record<Language, Record<string, string>> = {
     'institutions.summary.point5': 'Отсутствие очередей и быстрые сроки лечения',
     
     // Doctors
-    'doctors.title': 'Наши врачи',
-    'doctors.subtitle': 'Ведущие специалисты с многолетним опытом',
-    'doctors.experience': 'лет опыта',
+    'doctors.title': 'Ведущие врачи',
+    'doctors.subtitle': 'Ведущие специалисты ключевых медицинских учреждений Беларуси',
+    'doctors.experience': 'опыт работы',
     'doctors.operations': 'успешных операций',
+    
+    // Doctor Clinics
+    'doctors.clinic.cardiology.name': 'РНПЦ «Кардиология»',
+    'doctors.clinic.cardiology.address': 'г. Минск, ул. Розы Люксембург, 110Б',
+    'doctors.clinic.oncology.name': 'ННПЦ онкологии и медицинской радиологии им. Н.Н. Александрова',
+    'doctors.clinic.oncology.address': 'Минская область, д. Лесной',
+    'doctors.clinic.neurosurgery.name': 'РНПЦ неврологии и нейрохирургии',
+    'doctors.clinic.neurosurgery.address': 'г. Минск, ул. Франциска Скорины, 24',
+    'doctors.clinic.vip.name': 'Республиканский клинический медицинский центр (VIP-Clinic)',
+    'doctors.clinic.vip.address': 'г. Минск, Ждановичский сельсовет, д. 81, корп. 5',
+    'doctors.clinic.orthopedics.name': 'РНПЦ травматологии и ортопедии',
+    'doctors.clinic.orthopedics.address': 'г. Минск, ул. Кижеватова, 60',
+    'doctors.clinic.reproductive.name': 'Международный центр репродуктивных технологий BINA',
+    'doctors.clinic.reproductive.address': 'г. Минск, ул. Неманская, 67',
+    
+    // Individual Doctors - Cardiology
+    'doctors.ostrovsky.name': 'Юрий Петрович Островский',
+    'doctors.ostrovsky.degree': 'Доктор медицинских наук, профессор, академик',
+    'doctors.ostrovsky.specialty': 'Кардиохирургия, трансплантация сердца',
+    'doctors.ostrovsky.experience': 'Более 30 лет',
+    'doctors.ostrovsky.clinic': 'РНПЦ «Кардиология»',
+    
+    'doctors.shket.name': 'Александр Павлович Шкет',
+    'doctors.shket.degree': 'Кандидат медицинских наук',
+    'doctors.shket.specialty': 'Кардиохирургия',
+    'doctors.shket.experience': 'Более 27 лет',
+    'doctors.shket.clinic': 'Республиканский клинический медицинский центр',
+    
+    'doctors.gubar.name': 'Елена Николаевна Губарь',
+    'doctors.gubar.degree': 'Врач высшей квалификационной категории',
+    'doctors.gubar.specialty': 'Кардиология',
+    'doctors.gubar.experience': 'Более 38 лет',
+    'doctors.gubar.clinic': 'Республиканский клинический медицинский центр',
+    
+    'doctors.dovnar.name': 'Нелли Марьяновна Довнар',
+    'doctors.dovnar.degree': 'Врач-специалист',
+    'doctors.dovnar.specialty': 'Кардиология',
+    'doctors.dovnar.experience': '28 лет',
+    'doctors.dovnar.clinic': 'Республиканский клинический медицинский центр',
+    
+    // Individual Doctors - Oncology
+    'doctors.karanik.name': 'Владимир Степанович Караник',
+    'doctors.karanik.degree': 'Кандидат медицинских наук',
+    'doctors.karanik.specialty': 'Торакальная онкопатология, хирургия лёгких',
+    'doctors.karanik.experience': 'Многолетний опыт',
+    'doctors.karanik.clinic': 'РНПЦ онкологии',
+    
+    'doctors.gizemova.name': 'Ольга Анатольевна Гиземова',
+    'doctors.gizemova.degree': 'Кандидат медицинских наук',
+    'doctors.gizemova.specialty': 'Радиационная онкология',
+    'doctors.gizemova.experience': 'Многолетний опыт',
+    'doctors.gizemova.clinic': 'РНПЦ онкологии',
+    
+    'doctors.aleinikova.name': 'Ольга Виталиевна Алейникова',
+    'doctors.aleinikova.degree': 'Доктор медицинских наук, профессор',
+    'doctors.aleinikova.specialty': 'Педиатрическая онко-гематология',
+    'doctors.aleinikova.experience': 'Многолетний опыт',
+    'doctors.aleinikova.clinic': 'Центр детской онкологии и гематологии',
+    
+    // Individual Doctors - Neurosurgery
+    'doctors.sidorovich.name': 'Рышард Ромуальдович Сидорович',
+    'doctors.sidorovich.degree': 'Доктор медицинских наук, профессор',
+    'doctors.sidorovich.specialty': 'Неврология и нейрохирургия (директор центра)',
+    'doctors.sidorovich.experience': 'Многолетний опыт',
+    'doctors.sidorovich.clinic': 'РНПЦ нейрохирургии',
+    
+    'doctors.talabaev.name': 'Михаил Владимирович Талабаев',
+    'doctors.talabaev.degree': 'Доктор медицинских наук, доцент',
+    'doctors.talabaev.specialty': 'Нейрохирургия детского профиля',
+    'doctors.talabaev.experience': 'Многолетний опыт',
+    'doctors.talabaev.clinic': 'РНПЦ нейрохирургии',
+    
+    'doctors.vasilevich.name': 'Эдуард Николаевич Василевич',
+    'doctors.vasilevich.degree': 'Кандидат медицинских наук, доцент',
+    'doctors.vasilevich.specialty': 'Нейрохирургия',
+    'doctors.vasilevich.experience': 'Многолетний опыт',
+    'doctors.vasilevich.clinic': 'РНПЦ нейрохирургии',
+    
+    'doctors.bunyak.name': 'Анна Георгиевна Буняк',
+    'doctors.bunyak.degree': 'Кандидат медицинских наук, доцент',
+    'doctors.bunyak.specialty': 'Неврология',
+    'doctors.bunyak.experience': 'Многолетний опыт',
+    'doctors.bunyak.clinic': 'РНПЦ нейрохирургии',
+    
+    // Individual Doctors - VIP Clinic
+    'doctors.burko.name': 'Владимир Дмитриевич Бурко',
+    'doctors.burko.degree': 'Кандидат наук',
+    'doctors.burko.specialty': 'Урология',
+    'doctors.burko.experience': '34 года',
+    'doctors.burko.clinic': 'Республиканский клинический медицинский центр',
+    
+    'doctors.geyno.name': 'Елена Владимировна Гейно',
+    'doctors.geyno.degree': 'Врач-специалист',
+    'doctors.geyno.specialty': 'Оториноларингология',
+    'doctors.geyno.experience': '32 года',
+    'doctors.geyno.clinic': 'Республиканский клинический медицинский центр',
+    
+    'doctors.olikhver.name': 'Юрий Алексеевич Олихвер',
+    'doctors.olikhver.degree': 'Кардиохирург',
+    'doctors.olikhver.specialty': 'Кардиохирургия',
+    'doctors.olikhver.experience': '24 года',
+    'doctors.olikhver.clinic': 'Республиканский клинический медицинский центр',
+    
+    'doctors.glybovskaya.name': 'Татьяна Викентьевна Глыбовская',
+    'doctors.glybovskaya.degree': 'Кандидат медицинских наук',
+    'doctors.glybovskaya.specialty': 'Кардиология',
+    'doctors.glybovskaya.experience': '31 год',
+    'doctors.glybovskaya.clinic': 'Республиканский клинический медицинский центр',
+    
+    // Individual Doctors - Orthopedics
+    'doctors.volkov.name': 'Сергей Иванович Волков',
+    'doctors.volkov.degree': 'Врач-специалист',
+    'doctors.volkov.specialty': 'Ортопедическая хирургия, эндопротезирование суставов',
+    'doctors.volkov.experience': 'Более 25 лет',
+    'doctors.volkov.clinic': 'РНПЦ травматологии и ортопедии',
+    
+    // Individual Doctors - Reproductive
+    'doctors.kuznetsova.name': 'Мария Петровна Кузнецова',
+    'doctors.kuznetsova.degree': 'Врач-специалист',
+    'doctors.kuznetsova.specialty': 'ВРТ/ЭКО, репродуктология',
+    'doctors.kuznetsova.experience': 'Более 15 лет',
+    'doctors.kuznetsova.clinic': 'Международный центр репродуктивных технологий BINA',
     
     // Prices
     'prices.title': 'Цены',
@@ -1699,10 +1943,132 @@ const translations: Record<Language, Record<string, string>> = {
     'institutions.summary.point5': 'No queues and fast treatment timelines',
     
     // Doctors
-    'doctors.title': 'Our Doctors',
-    'doctors.subtitle': 'Leading specialists with extensive experience',
-    'doctors.experience': 'years experience',
+    'doctors.title': 'Leading Doctors',
+    'doctors.subtitle': 'Leading specialists at key medical institutions in Belarus',
+    'doctors.experience': 'experience',
     'doctors.operations': 'successful operations',
+    
+    // Doctor Clinics
+    'doctors.clinic.cardiology.name': 'RSPC Cardiology',
+    'doctors.clinic.cardiology.address': 'Minsk, Rosa Luxemburg St., 110B',
+    'doctors.clinic.oncology.name': 'NSPC of Oncology and Medical Radiology named after N.N. Alexandrov',
+    'doctors.clinic.oncology.address': 'Minsk Region, Lesnoy village',
+    'doctors.clinic.neurosurgery.name': 'RSPC of Neurology and Neurosurgery',
+    'doctors.clinic.neurosurgery.address': 'Minsk, Francisk Skorina St., 24',
+    'doctors.clinic.vip.name': 'Republican Clinical Medical Center (VIP-Clinic)',
+    'doctors.clinic.vip.address': 'Minsk, Zhdanovichi, Building 81, Block 5',
+    'doctors.clinic.orthopedics.name': 'RSPC of Traumatology and Orthopedics',
+    'doctors.clinic.orthopedics.address': 'Minsk, Kizhevatova St., 60',
+    'doctors.clinic.reproductive.name': 'International Center for Reproductive Technologies BINA',
+    'doctors.clinic.reproductive.address': 'Minsk, Nemanskaya St., 67',
+    
+    // Individual Doctors - Cardiology
+    'doctors.ostrovsky.name': 'Yuri Petrovich Ostrovsky',
+    'doctors.ostrovsky.degree': 'Doctor of Medical Sciences, Professor, Academician',
+    'doctors.ostrovsky.specialty': 'Cardiac Surgery, Heart Transplantation',
+    'doctors.ostrovsky.experience': 'Over 30 years',
+    'doctors.ostrovsky.clinic': 'RSPC Cardiology',
+    
+    'doctors.shket.name': 'Alexander Pavlovich Shket',
+    'doctors.shket.degree': 'Candidate of Medical Sciences',
+    'doctors.shket.specialty': 'Cardiac Surgery',
+    'doctors.shket.experience': 'Over 27 years',
+    'doctors.shket.clinic': 'Republican Clinical Medical Center',
+    
+    'doctors.gubar.name': 'Elena Nikolaevna Gubar',
+    'doctors.gubar.degree': 'Physician of the Highest Qualification Category',
+    'doctors.gubar.specialty': 'Cardiology',
+    'doctors.gubar.experience': 'Over 38 years',
+    'doctors.gubar.clinic': 'Republican Clinical Medical Center',
+    
+    'doctors.dovnar.name': 'Nelli Maryanovna Dovnar',
+    'doctors.dovnar.degree': 'Specialist Physician',
+    'doctors.dovnar.specialty': 'Cardiology',
+    'doctors.dovnar.experience': '28 years',
+    'doctors.dovnar.clinic': 'Republican Clinical Medical Center',
+    
+    // Individual Doctors - Oncology
+    'doctors.karanik.name': 'Vladimir Stepanovich Karanik',
+    'doctors.karanik.degree': 'Candidate of Medical Sciences',
+    'doctors.karanik.specialty': 'Thoracic Oncology, Lung Surgery',
+    'doctors.karanik.experience': 'Many years',
+    'doctors.karanik.clinic': 'RSPC Oncology',
+    
+    'doctors.gizemova.name': 'Olga Anatolyevna Gizemova',
+    'doctors.gizemova.degree': 'Candidate of Medical Sciences',
+    'doctors.gizemova.specialty': 'Radiation Oncology',
+    'doctors.gizemova.experience': 'Many years',
+    'doctors.gizemova.clinic': 'RSPC Oncology',
+    
+    'doctors.aleinikova.name': 'Olga Vitalyevna Aleinikova',
+    'doctors.aleinikova.degree': 'Doctor of Medical Sciences, Professor',
+    'doctors.aleinikova.specialty': 'Pediatric Onco-Hematology',
+    'doctors.aleinikova.experience': 'Many years',
+    'doctors.aleinikova.clinic': 'Pediatric Oncology and Hematology Center',
+    
+    // Individual Doctors - Neurosurgery
+    'doctors.sidorovich.name': 'Ryshard Romualdovich Sidorovich',
+    'doctors.sidorovich.degree': 'Doctor of Medical Sciences, Professor',
+    'doctors.sidorovich.specialty': 'Neurology and Neurosurgery (Center Director)',
+    'doctors.sidorovich.experience': 'Many years',
+    'doctors.sidorovich.clinic': 'RSPC Neurosurgery',
+    
+    'doctors.talabaev.name': 'Mikhail Vladimirovich Talabaev',
+    'doctors.talabaev.degree': 'Doctor of Medical Sciences, Associate Professor',
+    'doctors.talabaev.specialty': 'Pediatric Neurosurgery',
+    'doctors.talabaev.experience': 'Many years',
+    'doctors.talabaev.clinic': 'RSPC Neurosurgery',
+    
+    'doctors.vasilevich.name': 'Eduard Nikolaevich Vasilevich',
+    'doctors.vasilevich.degree': 'Candidate of Medical Sciences, Associate Professor',
+    'doctors.vasilevich.specialty': 'Neurosurgery',
+    'doctors.vasilevich.experience': 'Many years',
+    'doctors.vasilevich.clinic': 'RSPC Neurosurgery',
+    
+    'doctors.bunyak.name': 'Anna Georgievna Bunyak',
+    'doctors.bunyak.degree': 'Candidate of Medical Sciences, Associate Professor',
+    'doctors.bunyak.specialty': 'Neurology',
+    'doctors.bunyak.experience': 'Many years',
+    'doctors.bunyak.clinic': 'RSPC Neurosurgery',
+    
+    // Individual Doctors - VIP Clinic
+    'doctors.burko.name': 'Vladimir Dmitrievich Burko',
+    'doctors.burko.degree': 'Candidate of Sciences',
+    'doctors.burko.specialty': 'Urology',
+    'doctors.burko.experience': '34 years',
+    'doctors.burko.clinic': 'Republican Clinical Medical Center',
+    
+    'doctors.geyno.name': 'Elena Vladimirovna Geyno',
+    'doctors.geyno.degree': 'Specialist Physician',
+    'doctors.geyno.specialty': 'Otorhinolaryngology',
+    'doctors.geyno.experience': '32 years',
+    'doctors.geyno.clinic': 'Republican Clinical Medical Center',
+    
+    'doctors.olikhver.name': 'Yuri Alekseevich Olikhver',
+    'doctors.olikhver.degree': 'Cardiac Surgeon',
+    'doctors.olikhver.specialty': 'Cardiac Surgery',
+    'doctors.olikhver.experience': '24 years',
+    'doctors.olikhver.clinic': 'Republican Clinical Medical Center',
+    
+    'doctors.glybovskaya.name': 'Tatyana Vikentyevna Glybovskaya',
+    'doctors.glybovskaya.degree': 'Candidate of Medical Sciences',
+    'doctors.glybovskaya.specialty': 'Cardiology',
+    'doctors.glybovskaya.experience': '31 years',
+    'doctors.glybovskaya.clinic': 'Republican Clinical Medical Center',
+    
+    // Individual Doctors - Orthopedics
+    'doctors.volkov.name': 'Sergey Ivanovich Volkov',
+    'doctors.volkov.degree': 'Specialist Physician',
+    'doctors.volkov.specialty': 'Orthopedic Surgery, Joint Replacement',
+    'doctors.volkov.experience': 'Over 25 years',
+    'doctors.volkov.clinic': 'RSPC Traumatology and Orthopedics',
+    
+    // Individual Doctors - Reproductive
+    'doctors.kuznetsova.name': 'Maria Petrovna Kuznetsova',
+    'doctors.kuznetsova.degree': 'Specialist Physician',
+    'doctors.kuznetsova.specialty': 'ART/IVF, Reproductive Medicine',
+    'doctors.kuznetsova.experience': 'Over 15 years',
+    'doctors.kuznetsova.clinic': 'International Center for Reproductive Technologies BINA',
     
     // Prices
     'prices.title': 'Prices',
