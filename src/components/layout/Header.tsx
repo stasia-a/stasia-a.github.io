@@ -95,7 +95,12 @@ const Header = () => {
               <span>+375 29 653-29-51</span>
             </a>
             
-            {/* CTA Button */}
+            {/* CTA Buttons */}
+            <Link to="/contacts" className="hidden sm:block">
+              <Button variant="outline" size="sm">
+                {t('nav.contacts')}
+              </Button>
+            </Link>
             <Link to="/apply" className="hidden sm:block">
               <Button variant="gold" size="sm">
                 {t('nav.apply')}
