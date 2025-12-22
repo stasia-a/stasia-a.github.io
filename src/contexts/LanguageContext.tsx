@@ -974,6 +974,20 @@ const translations: Record<Language, Record<string, string>> = {
     'vipForm.successDesc': 'سيتصل بك منسقنا VIP خلال 24 ساعة',
     'vipForm.privacy': 'نحن نضمن السرية الكاملة لجميع المعلومات المقدمة',
     'vipForm.scrollToForm': 'تقديم طلب VIP',
+    
+    // VIP Promo Section
+    'vipPromo.badge': 'خدمة VIP حصرية',
+    'vipPromo.title': 'VIP السياحة العلاجية',
+    'vipPromo.description': 'خدمة مخصصة مع مستوى عالٍ من الراحة والسرية والأولوية. منسق شخصي، تشخيص سريع، إقامة فاخرة.',
+    'vipPromo.cta': 'اكتشف باقات VIP',
+    'vipPromo.features.coordinator.title': 'منسق شخصي',
+    'vipPromo.features.coordinator.desc': '24/7 دعم',
+    'vipPromo.features.priority.title': 'خدمة ذات أولوية',
+    'vipPromo.features.priority.desc': 'تشخيص وعلاج سريع',
+    'vipPromo.features.confidentiality.title': 'سرية كاملة',
+    'vipPromo.features.confidentiality.desc': 'اتفاقية عدم الإفصاح',
+    'vipPromo.features.comfort.title': 'أقصى درجات الراحة',
+    'vipPromo.features.comfort.desc': 'فنادق وعيادات فاخرة',
   },
   ru: {
     // Navigation
@@ -1908,6 +1922,20 @@ const translations: Record<Language, Record<string, string>> = {
     'vipForm.successDesc': 'Наш VIP-координатор свяжется с вами в течение 24 часов',
     'vipForm.privacy': 'Мы гарантируем полную конфиденциальность всей предоставленной информации',
     'vipForm.scrollToForm': 'Оставить VIP-заявку',
+    
+    // VIP Promo Section
+    'vipPromo.badge': 'Эксклюзивный VIP-сервис',
+    'vipPromo.title': 'VIP-медицинский туризм',
+    'vipPromo.description': 'Персонализированный сервис с повышенным уровнем комфорта, конфиденциальности и приоритета. Личный координатор, ускоренная диагностика, премиум-размещение.',
+    'vipPromo.cta': 'Узнать о VIP-пакетах',
+    'vipPromo.features.coordinator.title': 'Персональный координатор',
+    'vipPromo.features.coordinator.desc': 'Поддержка 24/7',
+    'vipPromo.features.priority.title': 'Приоритетный сервис',
+    'vipPromo.features.priority.desc': 'Ускоренная диагностика и лечение',
+    'vipPromo.features.confidentiality.title': 'Полная конфиденциальность',
+    'vipPromo.features.confidentiality.desc': 'NDA и закрытые каналы',
+    'vipPromo.features.comfort.title': 'Максимальный комфорт',
+    'vipPromo.features.comfort.desc': 'Премиум-отели и клиники',
   },
   en: {
     // Navigation
@@ -2847,6 +2875,20 @@ const translations: Record<Language, Record<string, string>> = {
     'vipForm.successDesc': 'Our VIP coordinator will contact you within 24 hours',
     'vipForm.privacy': 'We guarantee complete confidentiality of all information provided',
     'vipForm.scrollToForm': 'Submit VIP Request',
+    
+    // VIP Promo Section
+    'vipPromo.badge': 'Exclusive VIP Service',
+    'vipPromo.title': 'VIP Medical Tourism',
+    'vipPromo.description': 'Personalized service with enhanced comfort, confidentiality, and priority. Personal coordinator, expedited diagnostics, premium accommodation.',
+    'vipPromo.cta': 'Discover VIP Packages',
+    'vipPromo.features.coordinator.title': 'Personal Coordinator',
+    'vipPromo.features.coordinator.desc': '24/7 Support',
+    'vipPromo.features.priority.title': 'Priority Service',
+    'vipPromo.features.priority.desc': 'Expedited diagnostics and treatment',
+    'vipPromo.features.confidentiality.title': 'Complete Confidentiality',
+    'vipPromo.features.confidentiality.desc': 'NDA and closed channels',
+    'vipPromo.features.comfort.title': 'Maximum Comfort',
+    'vipPromo.features.comfort.desc': 'Premium hotels and clinics',
   },
 };
 

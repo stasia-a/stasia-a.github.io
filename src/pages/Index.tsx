@@ -2,6 +2,7 @@ import Layout from '@/components/layout/Layout';
 import HeroSection from '@/components/home/HeroSection';
 import ServicesSection from '@/components/home/ServicesSection';
 import WhyBelarusSection from '@/components/home/WhyBelarusSection';
+import VipPromoSection from '@/components/home/VipPromoSection';
 import CTASection from '@/components/home/CTASection';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -13,6 +14,7 @@ const Index = () => {
       <HeroSection />
       <ServicesSection />
       <WhyBelarusSection />
+      <VipPromoSection />
       <CTASection />
     </Layout>
   );
