@@ -4,6 +4,7 @@ import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ostrovskyPhoto from '@/assets/doctors/ostrovsky.jpg';
+import shketPhoto from '@/assets/doctors/shket.jpg';
 
 const Doctors = () => {
   const { t, dir } = useLanguage();
@@ -27,6 +28,7 @@ const Doctors = () => {
           specialtyKey: 'doctors.shket.specialty',
           experienceKey: 'doctors.shket.experience',
           clinicKey: 'doctors.shket.clinic',
+          photo: shketPhoto,
         },
         {
           nameKey: 'doctors.gubar.name',
