@@ -3,6 +3,11 @@ import Layout from '@/components/layout/Layout';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Separator } from '@/components/ui/separator';
 
+// Import equipment images
+import petMriBlue from '@/assets/equipment/pet-mri-blue.jpg';
+import ctScanner from '@/assets/equipment/ct-scanner.jpg';
+import mrtOpen from '@/assets/equipment/mrt-open.jpg';
+
 const About = () => {
   const { t, dir, language } = useLanguage();
   
@@ -96,9 +101,16 @@ const About = () => {
   
   return (
     <Layout>
-      {/* Hero */}
-      <section className="py-20 lg:py-32 gradient-hero relative overflow-hidden" dir={dir}>
+      {/* Hero with background image */}
+      <section className="py-20 lg:py-32 relative overflow-hidden" dir={dir}>
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${petMriBlue})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/85" />
         <div className="absolute inset-0 arabic-pattern opacity-20" />
+        
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <span className="inline-block px-4 py-1.5 rounded-full bg-gold/20 text-gold text-sm font-medium mb-4">
@@ -243,6 +255,34 @@ const About = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">{t('about.whybelarus.title')}</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">{t('about.whybelarus.subtitle')}</p>
+          </div>
+
+          {/* Equipment Images Showcase */}
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl group">
+              <img 
+                src={ctScanner}
+                alt="CT Scanner"
+                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 text-white">
+                <p className="font-semibold text-lg">CT Scanner GE</p>
+                <p className="text-sm text-white/80">Fast and accurate diagnostics</p>
+              </div>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-xl group">
+              <img 
+                src={mrtOpen}
+                alt="Open MRI"
+                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 text-white">
+                <p className="font-semibold text-lg">Open MRI</p>
+                <p className="text-sm text-white/80">Comfortable examination for all patients</p>
+              </div>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">

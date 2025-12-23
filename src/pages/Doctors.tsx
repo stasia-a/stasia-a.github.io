@@ -21,6 +21,9 @@ import bunyakPhoto from '@/assets/doctors/bunyak.jpg';
 import gizemovaPhoto from '@/assets/doctors/gizemova.png';
 import kuznetsovaPhoto from '@/assets/doctors/kuznetsova.jpg';
 
+// Import equipment image for hero
+import hyperthermia from '@/assets/equipment/hyperthermia.jpg';
+
 const Doctors = () => {
   const { t, dir } = useLanguage();
   
@@ -196,9 +199,16 @@ const Doctors = () => {
   
   return (
     <Layout>
-      {/* Hero */}
-      <section className="py-20 lg:py-32 gradient-hero relative overflow-hidden" dir={dir}>
+      {/* Hero with background image */}
+      <section className="py-20 lg:py-32 relative overflow-hidden" dir={dir}>
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${hyperthermia})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/85" />
         <div className="absolute inset-0 arabic-pattern opacity-20" />
+        
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <span className="inline-block px-4 py-1.5 rounded-full bg-gold/20 text-gold text-sm font-medium mb-4">

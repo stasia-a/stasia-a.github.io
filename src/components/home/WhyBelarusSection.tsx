@@ -1,6 +1,9 @@
 import { Award, DollarSign, Plane, Languages, CheckCircle } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
+// Import equipment image
+import mrtPhilips from '@/assets/equipment/mrt-philips.jpg';
+
 const WhyBelarusSection = () => {
   const { t, dir } = useLanguage();
   
@@ -68,36 +71,53 @@ const WhyBelarusSection = () => {
             </div>
           </div>
           
-          {/* Right - Benefits Card */}
+          {/* Right - Image and Benefits Card */}
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark rounded-3xl transform rotate-3" />
-            <div className="relative bg-card rounded-3xl p-8 lg:p-10 shadow-lg">
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-gold rounded-2xl flex items-center justify-center shadow-gold">
-                <span className="text-2xl font-bold text-primary">✓</span>
+            {/* Equipment Image */}
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl mb-6">
+              <img 
+                src={mrtPhilips}
+                alt="МРТ оборудование Philips 3T"
+                className="w-full h-64 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4">
+                <p className="text-white font-semibold">MRI Philips 3T</p>
+                <p className="text-white/80 text-sm">High-precision diagnostics</p>
               </div>
-              
-              <h3 className="text-2xl font-bold text-foreground mb-6">
-                Premium Benefits
-              </h3>
-              
-              <div className="grid grid-cols-1 gap-4">
-                {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-emerald flex-shrink-0" />
-                    <span className="text-foreground">{benefit}</span>
-                  </div>
-                ))}
-              </div>
-              
-              <div className="mt-8 pt-8 border-t border-border">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm text-muted-foreground">Savings up to</p>
-                    <p className="text-3xl font-bold text-gold">70%</p>
-                  </div>
-                  <div className="text-end">
-                    <p className="text-sm text-muted-foreground">vs Western Europe</p>
-                    <p className="text-lg font-semibold text-foreground">Same Quality</p>
+            </div>
+            
+            {/* Benefits Card */}
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark rounded-3xl transform rotate-2" />
+              <div className="relative bg-card rounded-3xl p-8 shadow-lg">
+                <div className="absolute -top-4 -right-4 w-16 h-16 bg-gold rounded-2xl flex items-center justify-center shadow-gold">
+                  <span className="text-xl font-bold text-primary">✓</span>
+                </div>
+                
+                <h3 className="text-xl font-bold text-foreground mb-6">
+                  Premium Benefits
+                </h3>
+                
+                <div className="grid grid-cols-1 gap-3">
+                  {benefits.map((benefit, index) => (
+                    <div key={index} className="flex items-center gap-3">
+                      <CheckCircle className="w-5 h-5 text-emerald flex-shrink-0" />
+                      <span className="text-foreground">{benefit}</span>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="mt-6 pt-6 border-t border-border">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-sm text-muted-foreground">Savings up to</p>
+                      <p className="text-2xl font-bold text-gold">70%</p>
+                    </div>
+                    <div className="text-end">
+                      <p className="text-sm text-muted-foreground">vs Western Europe</p>
+                      <p className="text-lg font-semibold text-foreground">Same Quality</p>
+                    </div>
                   </div>
                 </div>
               </div>
