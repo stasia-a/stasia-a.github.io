@@ -988,6 +988,10 @@ const translations: Record<Language, Record<string, string>> = {
     'vipPromo.features.confidentiality.desc': 'اتفاقية عدم الإفصاح',
     'vipPromo.features.comfort.title': 'أقصى درجات الراحة',
     'vipPromo.features.comfort.desc': 'فنادق وعيادات فاخرة',
+    
+    // Equipment Gallery
+    'equipment.title': 'المعدات الحديثة',
+    'equipment.subtitle': 'تقنيات التشخيص والعلاج المتقدمة من الشركات الرائدة عالمياً',
   },
   ru: {
     // Navigation
@@ -1936,6 +1940,10 @@ const translations: Record<Language, Record<string, string>> = {
     'vipPromo.features.confidentiality.desc': 'NDA и закрытые каналы',
     'vipPromo.features.comfort.title': 'Максимальный комфорт',
     'vipPromo.features.comfort.desc': 'Премиум-отели и клиники',
+    
+    // Equipment Gallery
+    'equipment.title': 'Современное оборудование',
+    'equipment.subtitle': 'Передовые технологии диагностики и лечения от ведущих мировых производителей',
   },
   en: {
     // Navigation
@@ -2889,6 +2897,10 @@ const translations: Record<Language, Record<string, string>> = {
     'vipPromo.features.confidentiality.desc': 'NDA and closed channels',
     'vipPromo.features.comfort.title': 'Maximum Comfort',
     'vipPromo.features.comfort.desc': 'Premium hotels and clinics',
+    
+    // Equipment Gallery
+    'equipment.title': 'Modern Equipment',
+    'equipment.subtitle': 'Advanced diagnostic and treatment technologies from world-leading manufacturers',
   },
 };
 

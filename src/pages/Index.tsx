@@ -1,6 +1,7 @@
 import Layout from '@/components/layout/Layout';
 import HeroSection from '@/components/home/HeroSection';
 import ServicesSection from '@/components/home/ServicesSection';
+import EquipmentGallery from '@/components/home/EquipmentGallery';
 import WhyBelarusSection from '@/components/home/WhyBelarusSection';
 import VipPromoSection from '@/components/home/VipPromoSection';
 import CTASection from '@/components/home/CTASection';
@@ -13,6 +14,7 @@ const Index = () => {
     <Layout>
       <HeroSection />
       <ServicesSection />
+      <EquipmentGallery />
       <WhyBelarusSection />
       <VipPromoSection />
       <CTASection />
