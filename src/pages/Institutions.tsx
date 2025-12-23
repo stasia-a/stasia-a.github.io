@@ -3,7 +3,7 @@ import { MapPin, Building2, ArrowRight, Phone, Mail, CheckCircle2, Users } from 
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
-
+import cardiologyCenter from '@/assets/institutions/cardiology-center.jpg';
 const Institutions = () => {
   const { t, dir } = useLanguage();
   
@@ -13,6 +13,7 @@ const Institutions = () => {
       nameKey: 'institutions.cardiology.name',
       type: 'state',
       addressKey: 'institutions.cardiology.address',
+      image: cardiologyCenter,
       profileKeys: [
         'institutions.cardiology.profile1',
         'institutions.cardiology.profile2',
@@ -268,6 +269,17 @@ const Institutions = () => {
                   
                   return (
                     <div key={inst.id} className="p-6 rounded-2xl bg-card border border-border card-hover">
+                      {/* Image */}
+                      {inst.image && (
+                        <div className="mb-4 -mx-6 -mt-6">
+                          <img 
+                            src={inst.image} 
+                            alt={t(inst.nameKey)} 
+                            className="w-full h-48 object-cover rounded-t-2xl"
+                          />
+                        </div>
+                      )}
+                      
                       {/* Header */}
                       <div className="mb-4">
                         <div className="flex items-center justify-between mb-2">
