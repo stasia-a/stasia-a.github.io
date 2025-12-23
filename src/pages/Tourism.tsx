@@ -4,14 +4,26 @@ import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
+// Import equipment images
+import petCtSiemens from '@/assets/equipment/pet-ct-siemens.jpg';
+import petMrtDoctor from '@/assets/equipment/pet-mrt-doctor.jpg';
+import hyperthermia from '@/assets/equipment/hyperthermia.jpg';
+
 const Tourism = () => {
   const { t, dir } = useLanguage();
   
   return (
     <Layout>
-      {/* Hero */}
-      <section className="py-20 lg:py-32 gradient-hero relative overflow-hidden" dir={dir}>
+      {/* Hero with background image */}
+      <section className="py-20 lg:py-32 relative overflow-hidden" dir={dir}>
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${petCtSiemens})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/85" />
         <div className="absolute inset-0 arabic-pattern opacity-20" />
+        
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <span className="inline-block px-4 py-1.5 rounded-full bg-gold/20 text-gold text-sm font-medium mb-4">
@@ -70,28 +82,45 @@ const Tourism = () => {
       {/* State of Medical Tourism */}
       <section className="py-20 bg-secondary/50" dir={dir}>
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6 text-center">{t('tourism.state.title')}</h2>
             <p className="text-lg text-muted-foreground mb-8 text-center">{t('tourism.state.desc')}</p>
             
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="p-6 rounded-2xl bg-card border border-border">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-emerald/10 flex items-center justify-center flex-shrink-0">
-                    <TrendingUp className="w-6 h-6 text-emerald" />
-                  </div>
-                  <div>
-                    <p className="text-foreground font-medium">{t('tourism.state.flow')}</p>
-                  </div>
+            <div className="grid lg:grid-cols-2 gap-8 mb-8">
+              {/* Equipment Image */}
+              <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                <img 
+                  src={petMrtDoctor}
+                  alt="Professional diagnostics"
+                  className="w-full h-72 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <p className="font-semibold">PET-MRT Philips</p>
+                  <p className="text-sm text-white/80">Professional diagnostics under specialist supervision</p>
                 </div>
               </div>
-              <div className="p-6 rounded-2xl bg-card border border-border">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Activity className="w-6 h-6 text-primary" />
+              
+              {/* Stats and Info */}
+              <div className="space-y-6">
+                <div className="p-6 rounded-2xl bg-card border border-border">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-emerald/10 flex items-center justify-center flex-shrink-0">
+                      <TrendingUp className="w-6 h-6 text-emerald" />
+                    </div>
+                    <div>
+                      <p className="text-foreground font-medium">{t('tourism.state.flow')}</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-foreground font-medium">{t('tourism.state.recovery')}</p>
+                </div>
+                <div className="p-6 rounded-2xl bg-card border border-border">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Activity className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-foreground font-medium">{t('tourism.state.recovery')}</p>
+                    </div>
                   </div>
                 </div>
               </div>
