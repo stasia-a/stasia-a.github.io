@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Languages } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import {
@@ -26,9 +26,9 @@ const Header = () => {
   ];
   
   const languages = [
-    { code: 'en', name: 'English', flag: '🇬🇧' },
-    { code: 'ar', name: 'العربية', flag: '🇸🇦' },
-    { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+    { code: 'en', name: 'English', flag: '🇬🇧', short: 'EN' },
+    { code: 'ar', name: 'العربية', flag: '🇸🇦', short: 'AR' },
+    { code: 'ru', name: 'Русский', flag: '🇷🇺', short: 'RU' },
   ];
   
   return (
@@ -68,20 +68,30 @@ const Header = () => {
             {/* Language Switcher */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="gap-2 px-2">
-                  <span className="text-lg">{languages.find(l => l.code === language)?.flag}</span>
-                  <Languages className="w-4 h-4 text-muted-foreground" />
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="gap-1.5 px-2.5 border-border/50 hover:border-primary/30 hover:bg-primary/5"
+                >
+                  <span className="text-base leading-none">{languages.find(l => l.code === language)?.flag}</span>
+                  <span className="text-xs font-semibold text-foreground/80">
+                    {languages.find(l => l.code === language)?.short}
+                  </span>
+                  <ChevronDown className="w-3 h-3 text-muted-foreground" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
+              <DropdownMenuContent align="end" className="min-w-[140px]">
                 {languages.map((lang) => (
                   <DropdownMenuItem
                     key={lang.code}
                     onClick={() => setLanguage(lang.code as 'ar' | 'ru' | 'en')}
-                    className={language === lang.code ? 'bg-primary/10' : ''}
+                    className={`gap-2 ${language === lang.code ? 'bg-primary/10 text-primary' : ''}`}
                   >
-                    <span className="mr-2 text-lg">{lang.flag}</span>
-                    {lang.name}
+                    <span className="text-base">{lang.flag}</span>
+                    <span className="flex-1">{lang.name}</span>
+                    {language === lang.code && (
+                      <span className="text-xs text-primary">✓</span>
+                    )}
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
