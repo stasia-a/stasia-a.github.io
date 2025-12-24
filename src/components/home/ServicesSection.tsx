@@ -260,22 +260,22 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group p-6 rounded-2xl bg-card border border-border card-hover"
+              className="group p-6 rounded-2xl bg-card/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-300"
               style={{ animationDelay: `${index * 0.05}s` }}
             >
-              <div className={`w-12 h-12 rounded-xl ${service.bgColor} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                <service.icon className={`w-6 h-6 ${service.color}`} />
+              <div className={`w-14 h-14 rounded-xl ${service.bgColor} border border-current/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-sm`}>
+                <service.icon className={`w-7 h-7 ${service.color}`} />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">
+              <h3 className="text-base font-bold text-foreground mb-3 leading-tight">
                 {service.title}
               </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-3">
+              <p className="text-sm text-muted-foreground/90 leading-relaxed mb-4 line-clamp-3">
                 {service.description}
               </p>
               {service.hasDetails ? (
                 <button
                   onClick={() => handleLearnMore(service)}
-                  className="inline-flex items-center gap-2 text-primary font-medium text-sm hover:gap-3 transition-all"
+                  className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all"
                 >
                   {t('hero.learn')}
                   <ArrowRight className="w-4 h-4" />
@@ -283,7 +283,7 @@ const ServicesSection = () => {
               ) : (
                 <Link
                   to="/apply"
-                  className="inline-flex items-center gap-2 text-primary font-medium text-sm hover:gap-3 transition-all"
+                  className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all"
                 >
                   {t('hero.cta')}
                   <ArrowRight className="w-4 h-4" />
