@@ -260,35 +260,40 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group p-6 rounded-2xl bg-card/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-300"
+              className="group relative p-6 rounded-2xl bg-gradient-to-br from-card via-card to-muted/30 backdrop-blur-sm border border-border/40 shadow-lg shadow-black/5 hover:shadow-xl hover:shadow-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300"
               style={{ animationDelay: `${index * 0.05}s` }}
             >
-              <div className={`w-14 h-14 rounded-xl ${service.bgColor} border border-current/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-sm`}>
-                <service.icon className={`w-7 h-7 ${service.color}`} />
+              {/* Subtle gradient overlay */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              
+              <div className="relative">
+                <div className={`w-14 h-14 rounded-xl ${service.bgColor} border border-current/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-md`}>
+                  <service.icon className={`w-7 h-7 ${service.color}`} />
+                </div>
+                <h3 className="text-base font-bold text-foreground mb-3 leading-tight">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-muted-foreground/90 leading-relaxed mb-4 line-clamp-3">
+                  {service.description}
+                </p>
+                {service.hasDetails ? (
+                  <button
+                    onClick={() => handleLearnMore(service)}
+                    className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all"
+                  >
+                    {t('hero.learn')}
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                ) : (
+                  <Link
+                    to="/apply"
+                    className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all"
+                  >
+                    {t('hero.cta')}
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                )}
               </div>
-              <h3 className="text-base font-bold text-foreground mb-3 leading-tight">
-                {service.title}
-              </h3>
-              <p className="text-sm text-muted-foreground/90 leading-relaxed mb-4 line-clamp-3">
-                {service.description}
-              </p>
-              {service.hasDetails ? (
-                <button
-                  onClick={() => handleLearnMore(service)}
-                  className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all"
-                >
-                  {t('hero.learn')}
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              ) : (
-                <Link
-                  to="/apply"
-                  className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all"
-                >
-                  {t('hero.cta')}
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              )}
             </div>
           ))}
         </div>
