@@ -306,7 +306,7 @@ const translations: Record<Language, Record<string, string>> = {
     'tourism.hero.badge': 'السياحة العلاجية في جمهورية بيلاروسيا',
     'tourism.hero.title': 'السياحة العلاجية في جمهورية بيلاروسيا',
     'tourism.hero.intro': 'تمتلك بيلاروسيا جميع المقومات اللازمة لتصبح وجهة جديدة وواعدة للسياحة العلاجية لمواطني الدول العربية ومناطق أخرى من العالم. المستوى العالي للطب والتقنيات الحديثة والأسعار المعقولة والبيئة الآمنة تجعل البلاد جذابة بشكل خاص للمرضى الأجانب.',
-    'tourism.hero.gap': 'في الوقت نفسه، لم يكن هناك حتى الآن مشغل متخصص في السوق قادر على دمج الخدمات الطبية واللوجستية والثقافية والخدمية في نظام واحد مريح ومفهوم، مكيف مع التقاليد الإسلامية وعقلية المرضى العرب وكذلك أولويات مواطني الدول الأوروبية والأمريكية والآسيوية والأفريقية. نحن نراعي باستمرار عقلية مرضانا وتفضيلاتهم وتوقعاتهم.',
+    'tourism.hero.gap': 'نسعى لنصبح مشغلاً متخصصاً قادراً على دمج الخدمات الطبية واللوجستية والثقافية والخدمية في نظام واحد مريح ومفهوم، مكيف مع التقاليد الإسلامية وعقلية المرضى العرب وكذلك أولويات مواطني الدول الأوروبية والأمريكية والآسيوية والأفريقية. نحن نراعي باستمرار عادات مرضانا وتفضيلاتهم وتوقعاتهم.',
     
     'tourism.project.title': 'مشروع ARABIA.BY',
     'tourism.project.desc': 'يصبح مشروع ARABIA.BY أول حل شامل لا يقدم فقط جولة طبية، بل يشكل قطاعاً جديداً في السوق — السياحة الطبية والثقافية، القائمة على:',
@@ -1289,7 +1289,7 @@ const translations: Record<Language, Record<string, string>> = {
     'tourism.hero.badge': 'Медицинский туризм в Республику Беларусь',
     'tourism.hero.title': 'Медицинский туризм в Республику Беларусь',
     'tourism.hero.intro': 'Беларусь обладает всеми необходимыми предпосылками для того, чтобы стать одним из новых и перспективных направлений медицинского туризма для граждан арабских стран и других регионов мира. Высокий уровень медицины, современные технологии, доступные цены и безопасная среда делают страну особенно привлекательной для иностранных пациентов.',
-    'tourism.hero.gap': 'В то же время до настоящего момента на рынке отсутствовал специализированный оператор, способный объединить медицинские, логистические, культурные и сервисные услуги в единую, удобную и понятную систему, адаптированную как под исламские традиции и менталитет арабских пациентов так и под приоритеты граждан европейских, американских, азиатских и Африканских стран. Мы постоянно учитываем менталитет, предпочтения и ожидания наших пациентов.',
+    'tourism.hero.gap': 'Мы стремимся стать специализированным оператором, способным объединить медицинские, логистические, культурные и сервисные услуги в единую, удобную и понятную систему, адаптированную как под исламские традиции и менталитет арабских пациентов, так и под приоритеты граждан европейских, американских, азиатских и африканских стран. Мы постоянно учитываем привычки, предпочтения и ожидания наших пациентов.',
     
     'tourism.project.title': 'Проект ARABIA.BY',
     'tourism.project.desc': 'Проект ARABIA.BY становится первым комплексным решением, которое не просто предлагает медицинский тур, а формирует новый сегмент рынка — медицинско-культурный туризм, основанный на:',
@@ -2241,7 +2241,7 @@ const translations: Record<Language, Record<string, string>> = {
     'tourism.hero.badge': 'Medical Tourism to the Republic of Belarus',
     'tourism.hero.title': 'Medical Tourism to the Republic of Belarus',
     'tourism.hero.intro': 'Belarus has all the necessary prerequisites to become a new and promising destination for medical tourism for citizens of Arab countries and other regions of the world. The high level of medicine, modern technologies, affordable prices, and safe environment make the country particularly attractive for foreign patients.',
-    'tourism.hero.gap': 'At the same time, until now, there has been no specialized operator in the market capable of combining medical, logistics, cultural, and service offerings into a single, convenient, and understandable system adapted to Islamic traditions and the mentality of Arab patients as well as the priorities of citizens from European, American, Asian, and African countries. We constantly consider the mentality, preferences, and expectations of our patients.',
+    'tourism.hero.gap': 'We strive to become a specialized operator capable of combining medical, logistics, cultural, and service offerings into a single, convenient, and understandable system adapted to Islamic traditions and the mentality of Arab patients, as well as the priorities of citizens from European, American, Asian, and African countries. We constantly consider the habits, preferences, and expectations of our patients.',
     
     'tourism.project.title': 'ARABIA.BY Project',
     'tourism.project.desc': 'The ARABIA.BY project is becoming the first comprehensive solution that not only offers a medical tour but forms a new market segment — medical and cultural tourism based on:',
