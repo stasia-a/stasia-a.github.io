@@ -45,10 +45,12 @@ const HeroSection = () => {
             </div>
             
             {/* Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-snug">
               {t('hero.title')}
-              <span className="block text-gradient mt-2">{t('hero.subtitle')}</span>
             </h1>
+            <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-gradient leading-snug">
+              {t('hero.subtitle')}
+            </p>
             
             {/* Description */}
             <p className="text-lg text-primary-foreground/80 max-w-xl mx-auto lg:mx-0 leading-relaxed">
