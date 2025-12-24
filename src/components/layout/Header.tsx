@@ -10,6 +10,32 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
+// Flag components as inline SVG for reliable rendering
+const FlagGB = () => (
+  <svg className="w-5 h-4 rounded-sm" viewBox="0 0 60 40">
+    <rect width="60" height="40" fill="#012169"/>
+    <path d="M0 0L60 40M60 0L0 40" stroke="#fff" strokeWidth="8"/>
+    <path d="M0 0L60 40M60 0L0 40" stroke="#C8102E" strokeWidth="4"/>
+    <path d="M30 0V40M0 20H60" stroke="#fff" strokeWidth="12"/>
+    <path d="M30 0V40M0 20H60" stroke="#C8102E" strokeWidth="6"/>
+  </svg>
+);
+
+const FlagSA = () => (
+  <svg className="w-5 h-4 rounded-sm" viewBox="0 0 60 40">
+    <rect width="60" height="40" fill="#006C35"/>
+    <text x="30" y="24" textAnchor="middle" fill="#fff" fontSize="10" fontFamily="Arial">عربي</text>
+  </svg>
+);
+
+const FlagRU = () => (
+  <svg className="w-5 h-4 rounded-sm" viewBox="0 0 60 40">
+    <rect width="60" height="13.33" fill="#fff"/>
+    <rect y="13.33" width="60" height="13.33" fill="#0039A6"/>
+    <rect y="26.66" width="60" height="13.34" fill="#D52B1E"/>
+  </svg>
+);
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t, language, setLanguage, dir } = useLanguage();
@@ -26,9 +52,9 @@ const Header = () => {
   ];
   
   const languages = [
-    { code: 'en', name: 'English', flag: '🇬🇧', short: 'EN' },
-    { code: 'ar', name: 'العربية', flag: '🇸🇦', short: 'AR' },
-    { code: 'ru', name: 'Русский', flag: '🇷🇺', short: 'RU' },
+    { code: 'en', name: 'English', short: 'EN', Flag: FlagGB },
+    { code: 'ar', name: 'العربية', short: 'AR', Flag: FlagSA },
+    { code: 'ru', name: 'Русский', short: 'RU', Flag: FlagRU },
   ];
   
   return (
@@ -73,7 +99,11 @@ const Header = () => {
                   size="sm" 
                   className="gap-1.5 px-2.5 border-border/50 hover:border-primary/30 hover:bg-primary/5"
                 >
-                  <span className="text-base leading-none">{languages.find(l => l.code === language)?.flag}</span>
+                  {(() => {
+                    const currentLang = languages.find(l => l.code === language);
+                    const CurrentFlag = currentLang?.Flag;
+                    return CurrentFlag ? <CurrentFlag /> : null;
+                  })()}
                   <span className="text-xs font-semibold text-foreground/80">
                     {languages.find(l => l.code === language)?.short}
                   </span>
@@ -81,19 +111,22 @@ const Header = () => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="min-w-[140px]">
-                {languages.map((lang) => (
-                  <DropdownMenuItem
-                    key={lang.code}
-                    onClick={() => setLanguage(lang.code as 'ar' | 'ru' | 'en')}
-                    className={`gap-2 ${language === lang.code ? 'bg-primary/10 text-primary' : ''}`}
-                  >
-                    <span className="text-base">{lang.flag}</span>
-                    <span className="flex-1">{lang.name}</span>
-                    {language === lang.code && (
-                      <span className="text-xs text-primary">✓</span>
-                    )}
-                  </DropdownMenuItem>
-                ))}
+                {languages.map((lang) => {
+                  const LangFlag = lang.Flag;
+                  return (
+                    <DropdownMenuItem
+                      key={lang.code}
+                      onClick={() => setLanguage(lang.code as 'ar' | 'ru' | 'en')}
+                      className={`gap-2 ${language === lang.code ? 'bg-primary/10 text-primary' : ''}`}
+                    >
+                      <LangFlag />
+                      <span className="flex-1">{lang.name}</span>
+                      {language === lang.code && (
+                        <span className="text-xs text-primary">✓</span>
+                      )}
+                    </DropdownMenuItem>
+                  );
+                })}
               </DropdownMenuContent>
             </DropdownMenu>
             
