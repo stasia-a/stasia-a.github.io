@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Globe } from 'lucide-react';
+import { Menu, X, Languages } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import {
@@ -68,11 +68,9 @@ const Header = () => {
             {/* Language Switcher */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="gap-2">
-                  <Globe className="w-4 h-4" />
-                  <span className="hidden sm:inline">
-                    {languages.find(l => l.code === language)?.flag}
-                  </span>
+                <Button variant="ghost" size="sm" className="gap-2 px-2">
+                  <span className="text-lg">{languages.find(l => l.code === language)?.flag}</span>
+                  <Languages className="w-4 h-4 text-muted-foreground" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
@@ -82,18 +80,12 @@ const Header = () => {
                     onClick={() => setLanguage(lang.code as 'ar' | 'ru' | 'en')}
                     className={language === lang.code ? 'bg-primary/10' : ''}
                   >
-                    <span className="mr-2">{lang.flag}</span>
+                    <span className="mr-2 text-lg">{lang.flag}</span>
                     {lang.name}
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-            
-            {/* Phone */}
-            <a href="tel:+375296532951" className="hidden md:flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground">
-              <Phone className="w-4 h-4" />
-              <span>+375 29 653-29-51</span>
-            </a>
             
             {/* CTA Buttons */}
             <Link to="/contacts" className="hidden sm:block">
