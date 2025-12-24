@@ -22,9 +22,9 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.apply': 'تقديم طلب',
     
     // Hero
-    'hero.title': 'السياحة العلاجية في بيلاروسيا',
-    'hero.subtitle': 'رعاية طبية عالمية المستوى بأسعار معقولة',
-    'hero.description': 'نرحب بالمرضى من الدول العربية للحصول على أفضل الخدمات الطبية في مؤسسات بيلاروسيا الرائدة',
+    'hero.title': 'السياحة العلاجية في جمهورية بيلاروسيا للمرضى من دول الشرق الأوسط وأوروبا وأمريكا وآسيا',
+    'hero.subtitle': 'مستوى طبي عالمي بأسعار معقولة',
+    'hero.description': 'ندعو المرضى للحصول بسرعة وسرية على أفضل الخدمات الطبية في المؤسسات الرائدة في بيلاروسيا، والخضوع للتشخيص، والحصول على علاج احترافي، مع ضمان نهج شخصي ومستوى عالٍ من الراحة واحترام القيم العائلية.',
     'hero.cta': 'احجز استشارتك المجانية',
     'hero.learn': 'اكتشف المزيد',
     
@@ -1005,9 +1005,9 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.apply': 'Оставить заявку',
     
     // Hero
-    'hero.title': 'Медицинский туризм в Беларуси',
+    'hero.title': 'Медицинский туризм в Республику Беларусь для пациентов из стран Ближнего Востока, Европы, Америки и Азии',
     'hero.subtitle': 'Мировой уровень медицины по доступным ценам',
-    'hero.description': 'Мы приглашаем пациентов из арабских стран получить лучшие медицинские услуги в ведущих учреждениях Беларуси',
+    'hero.description': 'Мы приглашаем пациентов быстро и конфиденциально получить лучшие медицинские услуги в ведущих учреждениях Беларуси, пройти диагностику, получить профессиональное лечение, обеспечивая персональный подход, высокий уровень комфорта, уважение к семейным ценностям.',
     'hero.cta': 'Бесплатная консультация',
     'hero.learn': 'Узнать больше',
     
@@ -1957,9 +1957,9 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.apply': 'Apply Now',
     
     // Hero
-    'hero.title': 'Medical Tourism in Belarus',
+    'hero.title': 'Medical Tourism to the Republic of Belarus for Patients from the Middle East, Europe, America and Asia',
     'hero.subtitle': 'World-Class Healthcare at Affordable Prices',
-    'hero.description': 'We welcome patients from Arab countries to receive the best medical services at leading Belarusian institutions',
+    'hero.description': 'We invite patients to quickly and confidentially receive the best medical services at leading Belarusian institutions, undergo diagnostics, receive professional treatment, ensuring a personalized approach, high level of comfort, and respect for family values.',
     'hero.cta': 'Book Free Consultation',
     'hero.learn': 'Learn More',
     
