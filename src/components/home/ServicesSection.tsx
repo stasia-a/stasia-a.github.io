@@ -7,6 +7,7 @@ import {
   Globe, Users
 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import mrtBanner from '@/assets/equipment/mrt-banner.jpg';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -241,6 +242,18 @@ const ServicesSection = () => {
   
   return (
     <section className="py-20 lg:py-32 bg-background" dir={dir}>
+      {/* MRT Banner Image */}
+      <div className="w-full mb-12">
+        <div className="relative h-64 md:h-80 lg:h-96 overflow-hidden">
+          <img 
+            src={mrtBanner} 
+            alt="Modern MRI equipment" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
+        </div>
+      </div>
+      
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
