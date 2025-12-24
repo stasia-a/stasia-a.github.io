@@ -30,8 +30,14 @@ const handler = async (req: Request): Promise<Response> => {
     const chatId = Deno.env.get("TELEGRAM_CHAT_ID");
 
     if (!botToken || !chatId) {
-      console.error("Missing Telegram configuration");
-      throw new Error("Telegram configuration not set");
+      console.error("Missing Telegram configuration: botToken or chatId not set");
+      return new Response(
+        JSON.stringify({ error: "Unable to process request. Please try again later." }),
+        {
+          status: 500,
+          headers: { "Content-Type": "application/json", ...corsHeaders },
+        }
+      );
     }
 
     const data: ApplicationRequest = await req.json();
@@ -84,7 +90,13 @@ const handler = async (req: Request): Promise<Response> => {
 
     if (!telegramResponse.ok) {
       console.error("Telegram API error:", telegramResult);
-      throw new Error(`Telegram API error: ${telegramResult.description}`);
+      return new Response(
+        JSON.stringify({ error: "Unable to process request. Please try again later." }),
+        {
+          status: 500,
+          headers: { "Content-Type": "application/json", ...corsHeaders },
+        }
+      );
     }
 
     return new Response(
@@ -97,7 +109,7 @@ const handler = async (req: Request): Promise<Response> => {
   } catch (error: any) {
     console.error("Error in send-to-telegram function:", error);
     return new Response(
-      JSON.stringify({ error: error.message }),
+      JSON.stringify({ error: "Unable to process request. Please try again later." }),
       {
         status: 500,
         headers: { "Content-Type": "application/json", ...corsHeaders },
